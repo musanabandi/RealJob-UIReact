@@ -1,5 +1,6 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
+import HomeComponent from '../components/HomeComponent';
 
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
 
 
         <MainLayout>
-           <h1>jobs</h1>
+           <h1 className="title">Real Job Opportunity</h1>
+           <HomeComponent></HomeComponent>
+           
                 
         </MainLayout>
     )
