@@ -16,6 +16,7 @@
   .site-layout-background {
     background: #fff;
   }
+
   .side-bar{
     float: right;
   }
@@ -57,3 +58,112 @@
 
   }
   
+
+
+
+  .card-register {
+    font-weight: 600;
+    width: 50%;
+    margin: 0% 3% 3% 20%;
+    box-shadow: 0px 0px 3px 3px #B0C4DE;
+    padding: 3% 10% 2% 5%;
+    height: 90%;
+  }
+
+.card-register h2{
+
+  align-items: center;
+  margin-left: 120px;
+  color: dimgray;
+  font-weight: bolder;
+  font-size: 25px;
+
+}
+
+.card-register p{
+
+  align-items: center;
+  font-weight: bolder;
+  color: dimgray;
+  font-size: 15px;
+
+}
+
+ 
+
+  .card-login {
+    width: 45%;
+    height: 70%;
+    margin: 10% 3% 3% 22%;
+    box-shadow: 0px 0px 3px 3px#B0C4DE;
+    padding: 3% 10% 2% 5%;
+  }
+  
+  .login-form-forgot {
+    float: right;
+  }
+ 
+  .login-form-button {
+    width: 100%;
+  }
+
+  .card-login h2{
+
+    align-items: center;
+    margin-left: 120px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 25px;
+
+  }
+
+  
+
+  .sign-content {
+    margin-top: 30px;
+
+  }
+
+
+  .card-dashboard{
+
+    width: 90%;
+    height: 80%;
+    margin: 10% 3% 3% 5%;
+    box-shadow: 0px 0px 3px 3px #B0C4DE;
+  }
+  /* .content-comment{
+    height: 600px;
+  } */
+  
+  .button{
+    margin-left: 25%;
+    width: 20%;
+  }
+
+  .dashboard-content p{
+    font-size: 18px;
+    /* font-weight: bolder; */
+    color: rgb(78, 76, 76);
+
+  }
+  .dragger-document{
+    margin-left: 200px;
+    width: 800px;
+   
+  }
+ 
+
+
+  /* .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+    [data-theme="dark"] .site-layout .site-layout-background {
+      background: #141414;
+    } */
