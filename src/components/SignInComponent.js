@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import './index.css';
 import { Form, Input, Button, Checkbox, Card } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import RealJobApi from '../services/realJobApi';
+import RealJobApi from '../services/apiRealJob';
 import { useHistory } from 'react-router-dom';
 import store from 'store';
 
@@ -28,9 +28,12 @@ const SignInComponent = () => {
     }
   };
 
+ 
+
 
   return (
     <Card className="card-login">
+
       <Form
         name="normal_login"
         className="login-form"
@@ -41,7 +44,7 @@ const SignInComponent = () => {
         onFinish={onFinish}
 
       >
-
+       <h2>SignIn</h2>
         <Form.Item
           name="email"
           rules={[
@@ -85,7 +88,9 @@ const SignInComponent = () => {
           <Button type="primary" htmlType="submit" className="login-form-button">
             Log In
         </Button>
-        Or <a href="signup">Register Now!</a>
+        <div class='sign-content '>
+        New User? <a href="signup">Click Here To Create Account!</a>
+        </div>
         </Form.Item>
       </Form>
     </Card>
