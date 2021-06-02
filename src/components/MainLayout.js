@@ -142,7 +142,7 @@ const MainLayout = ({ children }) => {
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
-        Ant Design ©2018 Created by Ant UED
+        Ant Design by Clarisse Damars Media n Ange
       </Footer>
     </Layout>
   );
