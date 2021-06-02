@@ -2,10 +2,11 @@ import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
-import { Layout, Menu } from 'antd';
+import { Card, Layout, Menu } from 'antd';
 import { UserOutlined} from '@ant-design/icons';
 import {Link} from 'react-router-dom';
 import store from 'store';
+import rjo1 from '../assets/rjo1.jpg';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -23,7 +24,10 @@ return(
     
   <Layout>
     <Header className="header">
-      <div className="logo" />
+    <img src={rjo1}  className="rjo"/>
+    
+      {/* <div className="logo" /> */}
+      <div className="side-bar">
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
         <Menu.Item key="1">Home</Menu.Item>
         <Menu.Item key="2">Profile</Menu.Item>
@@ -49,6 +53,7 @@ return(
 
 
       </Menu>
+      </div>
     </Header>
     <Content style={{ padding: '0 50px' }}>
       
@@ -79,6 +84,7 @@ return(
         {children}
             
     </Content>
+
       </Layout>
     </Content>
 
