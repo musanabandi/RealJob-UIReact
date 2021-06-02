@@ -15,7 +15,7 @@ const card=() =>{
        
        
 
-       <button className="button"> <a href="SecondPage">Read More</a></button>
+       <button className="button"> <a href="ViewPost">Read More</a></button>
        </div>
     
 
