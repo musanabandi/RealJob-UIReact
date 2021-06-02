@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {notification} from 'antd';
 
-const RealJobUrl = 'https://blogpost-shecancode-api.herokuapp.com/api/v1/blo' ;
+const RealJobUrl = '' ;
 
 
 class RealJobApi{
