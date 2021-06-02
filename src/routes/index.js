@@ -18,7 +18,7 @@ const Index = () => {
 
               <Route component={ViewPost} exact path={["/viewpost"]} />
 
-              <Route component={JobSeeker} exact path={["/jobseeker"]} />
+              <Route component={JobSeeker} exact path={["/dashboard"]} />
 
              
         </Switch>

@@ -15,14 +15,15 @@ const SignInComponent = () => {
   const onFinish = async (values) => {
     // console.log("Received values of form: ", values);
 
-    const response = await RealJobApi.loginAuth(values);
+    // const response = await RealJobApi.loginAuth(values);
+    const response = {status:201};
     // console.log(response);
     if (!response) {
       return
     }
     if (response.status === 201) {
       
-      store.set('user',{token:response.data.token})
+      store.set('user',{token:'this is my token',role:'jobSeeker'})
 
       return history.push('/dashboard')
     }

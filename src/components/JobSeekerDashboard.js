@@ -39,37 +39,11 @@ const JobSeekerApplication = () => {
     
 
     return (
-      <Layout style={{ minHeight: '100vh' }}>
-        <Sider>
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1" icon={<MenuOutlined />}>
-              JobSeekerDashboard
-            </Menu.Item>
-            <Menu.Item key="2" icon={<UserOutlined />}>
-              Create Profile
-            </Menu.Item>
-           
-           
-            <Menu.Item key="9" icon={<FolderViewOutlined />}>
-              View Posted Job
-            </Menu.Item>
-
-            <Menu.Item key="9" icon={<AppstoreOutlined />}>
-              Create Application
-            </Menu.Item>
-
-
-          </Menu>
-        </Sider>
-        <Layout className="site-layout">
-          
-          <Content style={{ margin: '0 16px' }}>
 
 
 
 
-
-<Card className='card-dashboard'>
+<Card >
             <Form
                 name="validate_other"
                 {...formItemLayout}
@@ -127,19 +101,7 @@ const JobSeekerApplication = () => {
 
             </Form>
         </Card>
-               
-            
-            {/* <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              Bill is a cat.
-            </div> */}
 
-
-
-          </Content>
-          
-          {/*   */}
-        </Layout>
-      </Layout>
     );
   
 

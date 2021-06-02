@@ -24,6 +24,7 @@
     height: 45px;
     width: 45px;
     /* margin: 10% 15% 5% 20%; */
+    margin-right: 10px;
    border-radius: 50%;
     
   }
@@ -52,11 +53,7 @@
   
   
  
-  .button{
-    
-    margin-top: 10em;
-
-  }
+  
   
 
 
