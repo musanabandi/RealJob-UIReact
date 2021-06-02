@@ -1,0 +1,30 @@
+[
+    
+    {
+        "title":"Software Engineer",
+        "content":"fgkjahkjhdkfjhdkjfbjksdkfjhksdf",
+        "postedTime":"20 march 2020 20:30 Pm",
+        "category":"it",
+        "type":"Part-Time",
+        "postedBy":" Damars"
+
+    },
+    {
+        "title":"Construction Engineer",
+        "content":"fgkjahkjhdkfjhdkjfbjksdkfjhksdf",
+        "postedTime":"20 march 2020 20:30 Pm",
+        "category":"it",
+        "type":"Full-Time",
+        "postedBy":" HviewTech Ltd"
+
+    },
+    {
+        "title":"Computer Engineer",
+        "content":"fgkjahkjhdkfjhdkjfbjksdkfjhksdf",
+        "postedTime":"20 march 2020 20:30 Pm",
+        "category":"it",
+        "type":"Part-Time",
+        "postedBy":" Crallise"
+
+    }
+]

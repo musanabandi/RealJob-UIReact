@@ -9,7 +9,6 @@ const Home = () => {
 
 
         <MainLayout>
-           <h1 className="title">Real Job Opportunity</h1>
            <HomeComponent></HomeComponent>
            
                 
