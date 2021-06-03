@@ -2,10 +2,9 @@ import Home from '../views/Home';
 import SignIn from '../views/SignIn';
 import SignUp from '../views/SignUp';
 import { Route, Switch } from 'react-router-dom';
-
 import ViewPost from '../views/ViewPost';
-
-import JobSeeker from '../views/JobSeeker'
+import JobSeeker from '../views/JobSeeker';
+import MyJobApplication from '../views/MyJobApplicationViews';
 
 
 const Index = () => {
@@ -19,6 +18,7 @@ const Index = () => {
               <Route component={ViewPost} exact path={["/viewpost"]} />
 
               <Route component={JobSeeker} exact path={["/dashboard"]} />
+              <Route component={MyJobApplication} exact path={['/myjobapplication']} />
 
              
         </Switch>
