@@ -35,16 +35,19 @@ const layout = () => {
 
                 <h3>Posted On: {job.postedTime}</h3>
                 <div className="icons-home">
-                <StarOutlined />
-                <LikeOutlined/>
-                <ShareAltOutlined/>
+                <StarOutlined className="star-icon"/>
+                &nbsp;&nbsp;&nbsp;
+                <LikeOutlined className="like-icon"/>
+                &nbsp;&nbsp;&nbsp;
+                <ShareAltOutlined className="share-icon"/>
                 </div>
                 
-                <button className="button-home">
+              </div>
+ <button className="button-home">
                   {" "} 
                   <a href="ViewPost">Read More</a>
                 </button>
-              </div>
+
             </div>
           </Card.Grid>
         );
