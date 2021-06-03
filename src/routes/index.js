@@ -6,6 +6,8 @@ import { Route, Switch } from 'react-router-dom';
 import ViewPost from '../views/ViewPost';
 
 import JobSeeker from '../views/JobSeeker'
+import JobProvider from '../views/JobProvider';
+import ProfileForm from '../components/ProfileForm';
 
 
 const Index = () => {
@@ -19,6 +21,8 @@ const Index = () => {
               <Route component={ViewPost} exact path={["/viewpost"]} />
 
               <Route component={JobSeeker} exact path={["/dashboard"]} />
+              <Route component={JobProvider} exact path={["/JobProviderDashboard"]} />
+              <Route component={ProfileForm} exact path={["/Profile"]} />
 
              
         </Switch>
