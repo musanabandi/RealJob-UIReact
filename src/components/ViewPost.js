@@ -16,7 +16,7 @@ A computer programmer, sometimes called a software developer.
 
      <br></br>
 
- <button className="button">Apply</button>
+ <button className="button"><a href='dashboard'>Apply</a></button>
  </div>
 </Card>
 

@@ -185,7 +185,10 @@ const MainLayout = ({ children }) => {
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
+JobProviderDashboard
         Ant Design ©2018 Created by Ryan Group
+
+        Ant Design by Clarisse Damars Media n Ange
       </Footer>
     </Layout>
   );
