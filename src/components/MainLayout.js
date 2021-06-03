@@ -117,7 +117,7 @@ const MainLayout = ({ children }) => {
               JobSeekerDashboard
             </Menu.Item>
             <Menu.Item key="2" icon={<UserOutlined />}>
-              Create Profile
+               Profile
             </Menu.Item>
            
            
@@ -127,6 +127,10 @@ const MainLayout = ({ children }) => {
 
             <Menu.Item key="9" icon={<AppstoreOutlined />}>
               Create Application
+            </Menu.Item>
+
+            <Menu.Item key="9" icon={<AppstoreOutlined />}>
+              List of All Applications
             </Menu.Item>
 
 
