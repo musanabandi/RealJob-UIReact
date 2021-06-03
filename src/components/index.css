@@ -57,17 +57,24 @@
   
   
  .button-home{
-   margin-top: -5em;
-   margin-left: 10em;
-   
+   margin-top: -80px;
+   margin-left: 10em;  
 
  }
-  
-  .icons-home{
-    margin-right: 10em;
-    margin-top: 8em;
 
-  }
+ .star-icon{
+   margin-top: 80px;
+   margin-left: -200px;
+   justify-content: space-between;
+ }
+  
+  /* .icons-home{
+    margin-right: 10em;
+    margin-top: 5em; 
+    
+
+
+  } */
 
 
 
