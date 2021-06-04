@@ -27,4 +27,34 @@
         "postedBy":" Crallise"
 
     }
+    ,
+    {
+        "title":"Eye-Doctor",
+        "content":"fgkjahkjhdkfjhdkjfbjksdkfjhksdf",
+        "postedTime":"20 march 2020 20:30 Pm",
+        "category":"it",
+        "type":"Part-Time",
+        "postedBy":" Crallise"
+
+    }
+    ,
+    {
+        "title":"House Keeping",
+        "content":"fgkjahkjhdkfjhdkjfbjksdkfjhksdf",
+        "postedTime":"20 march 2020 20:30 Pm",
+        "category":"it",
+        "type":"Part-Time",
+        "postedBy":" Craly"
+
+    }
+    ,
+    {
+        "title":"Quality Management",
+        "content":"fgkjahkjhdkfjhdkjfbjksdkfjhksdf",
+        "postedTime":"2 march 2020 10:30 Pm",
+        "category":"it",
+        "type":"full-Time",
+        "postedBy":" Media"
+
+    }
 ]
