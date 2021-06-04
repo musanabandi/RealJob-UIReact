@@ -8,6 +8,8 @@ import ViewPost from '../views/ViewPost';
 import JobSeeker from '../views/JobSeeker'
 import JobProvider from '../views/JobProvider';
 import ProfileForm from '../components/ProfileForm';
+import MyJobApplication from '../views/MyJobApplicationViews';
+import EducationRecord from '../components/EducationRecords';
 
 import JobSeeker from '../views/JobSeeker';
 import MyJobApplication from '../views/MyJobApplicationViews';
@@ -29,8 +31,9 @@ const Index = () => {
               <Route component={ProfileForm} exact path={["/Profile"]} />
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />
 
+              <Route component={EducationRecord} exact path={['/EducationRecord']} />
 
-             
+
         </Switch>
 
     )
