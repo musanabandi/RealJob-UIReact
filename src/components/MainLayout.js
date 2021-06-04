@@ -118,6 +118,9 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="1" icon={<MenuOutlined />}>
               Dashboard
             </Menu.Item>
+
+            <Menu.Item key="2" icon={<UserOutlined />}>
+               Profile
             <Menu.Item key="2" icon={<PlusCircleOutlined/>}>
               Profile
             </Menu.Item>
@@ -138,6 +141,10 @@ const MainLayout = ({ children }) => {
             </Menu.Item>
             <Menu.Item key="9" icon={<FileOutlined/>}>
               View Profiles
+            </Menu.Item>
+
+            <Menu.Item key="9" icon={<AppstoreOutlined />}>
+              List of All Applications
             </Menu.Item>
 
 

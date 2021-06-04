@@ -1,0 +1,55 @@
+[
+    
+    {
+        "jobtitle":"Software Developer",
+        "jobcategory":"Programing",
+        "joblocation":"Muhanga",
+        "jobowner":"HView Tech",
+        "postedtime":"3 June 2021 10:30 am",
+        "deadline":"15 June 2021 10:30 am",
+        "numberofposition":"3",
+        "isactive":"Yes"
+       
+    },
+
+    {
+        "jobtitle":"Network Administrator",
+        "jobcategory":"Networking",
+        "joblocation":"Muhanga",
+        "jobowner":"HView Tech",
+        "postedtime":"10 June 2021 10:30 am",
+        "deadline":"30 June 2021 10:30 am",
+        "numberofposition":"2",
+        "isactive":"Yes"
+       
+    },
+
+
+    {
+        "jobtitle":"ICT Officer",
+        "jobcategory":"ICT",
+        "joblocation":"Muhanga",
+        "jobowner":"HView Tech",
+        "postedtime":"10 June 2021 10:30 am",
+        "deadline":"28 June 2021 10:30 am",
+        "numberofposition":"4",
+        "isactive":"Yes"
+       
+    },
+
+    {
+        "jobtitle":"Network Security",
+        "jobcategory":"Computer Science",
+        "joblocation":"Muhanga",
+        "jobowner":"HView Tech",
+        "postedtime":"18 June 2021 10:30 am",
+        "deadline":"2 July 2021 10:30 am",
+        "numberofposition":"1",
+        "isactive":"Yes"
+       
+    }
+
+   
+    
+    
+]
