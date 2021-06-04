@@ -13,6 +13,8 @@ import {
   InboxOutlined,
   AppstoreOutlined,
   UploadOutlined,
+  PlusCircleOutlined,
+  FileOutlined
 } from "@ant-design/icons";
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -114,20 +116,30 @@ const MainLayout = ({ children }) => {
                     <Sider>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<MenuOutlined />}>
-              JobSeekerDashboard
+              JobProviderDashboard
             </Menu.Item>
+
             <Menu.Item key="2" icon={<UserOutlined />}>
                Profile
+
+            </Menu.Item>
+            <Menu.Item key="2" icon={<PlusCircleOutlined/>}>
+              Create Job
+
             </Menu.Item>
            
            
             <Menu.Item key="9" icon={<FolderViewOutlined />}>
-              View Posted Job
+              View Posted Jobs
             </Menu.Item>
 
             <Menu.Item key="9" icon={<AppstoreOutlined />}>
-              Create Application
+              View all Applications
             </Menu.Item>
+            <Menu.Item key="9" icon={<FileOutlined/>}>
+              View Profiles
+            </Menu.Item>
+
 
             <Menu.Item key="9" icon={<AppstoreOutlined />}>
               List of All Applications
@@ -139,6 +151,45 @@ const MainLayout = ({ children }) => {
             </>
           ):null}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Content style={{ padding: "0 24px", minHeight: "100vh" }}>
             {children}
           </Content>
@@ -146,6 +197,9 @@ const MainLayout = ({ children }) => {
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
+JobProviderDashboard
+        Ant Design ©2018 Created by Ryan Group
+
         Ant Design by Clarisse Damars Media n Ange
       </Footer>
     </Layout>
