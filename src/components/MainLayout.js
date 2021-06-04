@@ -118,8 +118,14 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="1" icon={<MenuOutlined />}>
               JobProviderDashboard
             </Menu.Item>
+
+            <Menu.Item key="2" icon={<UserOutlined />}>
+               Profile
+
+            </Menu.Item>
             <Menu.Item key="2" icon={<PlusCircleOutlined/>}>
               Create Job
+
             </Menu.Item>
            
            
@@ -133,6 +139,12 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="9" icon={<FileOutlined/>}>
               View Profiles
             </Menu.Item>
+
+
+            <Menu.Item key="9" icon={<AppstoreOutlined />}>
+              List of All Applications
+            </Menu.Item>
+
 
           </Menu>
         </Sider>

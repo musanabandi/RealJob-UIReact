@@ -6,11 +6,18 @@ import ViewPost from '../views/ViewPost';
 
 
 import JobSeeker from '../views/JobSeeker'
+
+import Apply from '../views/application'
+import AllApplicants from '../views/ListApp'
+import JobOwner from '../views/JobOwnerDetails'
+
 import JobProvider from '../views/JobProvider';
 import ProfileForm from '../components/ProfileForm';
 
+
 import JobSeeker from '../views/JobSeeker';
 import MyJobApplication from '../views/MyJobApplicationViews';
+
 
 
 const Index = () => {
@@ -25,8 +32,14 @@ const Index = () => {
 
               <Route component={JobSeeker} exact path={["/dashboard"]} />
 
+              <Route component={Apply} exact path={["/apply"]} />
+              <Route component={AllApplicants} exact path={["/applicants"]} />
+              <Route component={JobOwner} exact path={["/mypost"]} />
+
+
               <Route component={JobProvider} exact path={["/JobProviderDashboard"]} />
               <Route component={ProfileForm} exact path={["/Profile"]} />
+
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />
 
 
