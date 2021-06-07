@@ -15,10 +15,15 @@
   
   .site-layout-background {
     background: #fff;
+    
   }
 
   .side-bar{
-    float: right;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    float:right;
+    margin-right: 12px;
+    
   }
   .rjo{
     height: 45px;
@@ -34,27 +39,55 @@
   }
   .card-container{
     text-align: center;
-        width:30em;
+        width:25em;
         height: 20em;
         background-color:white;
         box-shadow: 0px 0px 3px 3px #B0C4DE;
         margin-left: -1em;
-        color:black;  
+        color:black; 
+        
+        
        
         
   }
-  .card{
+  /* .card{
     background-color: whitesmoke;
     margin: 1px;
     padding: 20px;
     width: 100%;
     height: 100%; 
+    
+  } */
+  .about-title{
+    font-size: 40px;
+  }
+  .about-pic{
+     height: 105px;
+    width: 105px;
+    /* margin: 10% 15% 5% 20%; */
+    margin-right: 10px;
+   border-radius: 50%;
   }
   
+ .button-home{
+   margin-top: -80px;
+   margin-left: 10em;  
+
+ }
+
+ .star-icon{
+   margin-top: 80px;
+   margin-left: -200px;
+   justify-content: space-between;
+ }
   
- 
-  
-  
+  /* .icons-home{
+    margin-right: 10em;
+    margin-top: 5em; 
+    
+
+
+  } */
 
 
 
@@ -164,3 +197,12 @@
     [data-theme="dark"] .site-layout .site-layout-background {
       background: #141414;
     } */
+
+
+    .title-details{
+
+      justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: #1E90FF;
+    }

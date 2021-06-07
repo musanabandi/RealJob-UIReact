@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
-import JobSeekerDashboard from '../components/JobSeekerDashboard';
+import JobSeekerApplication from '../components/MakeApplicationComponent';
 
 
 const JobSeeker =()=> {
@@ -9,7 +9,7 @@ const JobSeeker =()=> {
 
        <MainLayout>
 
- <JobSeekerDashboard></JobSeekerDashboard>
+ <JobSeekerApplication></JobSeekerApplication>
  
        </MainLayout>
     )
