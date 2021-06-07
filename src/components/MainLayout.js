@@ -9,11 +9,14 @@ import rjo1 from "../assets/rjo1.jpg";
 import {
   UserOutlined,
   MenuOutlined,
+  FileSearchOutlined,
+  FormOutlined,
+  BankOutlined,
   FolderViewOutlined,
-  InboxOutlined,
-  AppstoreOutlined,
-  UploadOutlined,
+  FundViewOutlined,
+  AppstoreAddOutlined
 } from "@ant-design/icons";
+
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -57,7 +60,7 @@ const MainLayout = ({ children }) => {
 
             {store.get("user") ? (
               <>
-              <Menu.Item key="2"> <Link to="/dashboard">Dashboard</Link></Menu.Item>
+              <Menu.Item key="2"> <Link to="/createapplication">Dashboard</Link></Menu.Item>
                 <Menu.Item key="5">
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
@@ -114,26 +117,37 @@ const MainLayout = ({ children }) => {
                     <Sider>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<MenuOutlined />}>
-              JobSeekerDashboard
+              Dashboard
             </Menu.Item>
             <Menu.Item key="2" icon={<UserOutlined />}>
-              Create Profile
+               Profile
             </Menu.Item>
-           
-           
-            <Menu.Item key="9" icon={<FolderViewOutlined />}>
-              View Posted Job
+            <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
+             
             </Menu.Item>
-
-            <Menu.Item key="9" icon={<AppstoreOutlined />}>
+            <Menu.Item key="9" icon={<FormOutlined />}><Link to='/makeapplication'> Create Application</Link>
               Create Application
             </Menu.Item>
 
+            <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Application</Link>
+             
+            </Menu.Item>
 
+            <Menu.Item key="10" icon={<FileSearchOutlined />}><Link to='/mypost'> View MyPosted Job</Link>
+              
+            </Menu.Item> 
+
+            <Menu.Item key="10" icon={<FolderViewOutlined />}><Link to='/applicants'>  Applicants List</Link>
+              
+            </Menu.Item>
+            <Menu.Item key="10" icon={<BankOutlined />}><Link to='/createjob'>  Create A Job</Link>
+              
+            </Menu.Item>
           </Menu>
         </Sider>
             </>
           ):null}
+
 
           <Content style={{ padding: "0 24px", minHeight: "100vh" }}>
             {children}
@@ -142,6 +156,7 @@ const MainLayout = ({ children }) => {
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
+
         Ant Design by Clarisse Damars Media n Ange
       </Footer>
     </Layout>

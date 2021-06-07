@@ -19,7 +19,11 @@
   }
 
   .side-bar{
-    float: right;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    float:right;
+    margin-right: 12px;
+    
   }
   .rjo{
     height: 45px;
@@ -193,3 +197,12 @@
     [data-theme="dark"] .site-layout .site-layout-background {
       background: #141414;
     } */
+
+
+    .title-details{
+
+      justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: #1E90FF;
+    }
