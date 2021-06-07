@@ -58,7 +58,16 @@
     height: 100%; 
     
   } */
-  
+  .about-title{
+    font-size: 40px;
+  }
+  .about-pic{
+     height: 105px;
+    width: 105px;
+    /* margin: 10% 15% 5% 20%; */
+    margin-right: 10px;
+   border-radius: 50%;
+  }
   
  .button-home{
    margin-top: -80px;

@@ -9,7 +9,12 @@ import JobOwner from '../views/JobOwnerDetails'
 import JobProvider from '../views/JobProvider';
 import ProfileForm from '../components/ProfileForm';
 import MyJobApplication from '../views/MyJobApplicationViews';
+
+import AboutUs from '../views/AboutUsViews';
+import Software from '../views/SoftwareViews';
+
 import EducationRecord from '../components/EducationRecords';
+
 
 
 
@@ -31,6 +36,8 @@ const Index = () => {
               <Route component={JobProvider} exact path={["/createjob"]} />
               <Route component={ProfileForm} exact path={["/profile"]} />
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />
+<Route component={AboutUs} exact path={["/aboutus"]} />
+    <Route component={Software} exact path={["/softawarePage"]} />
 
               <Route component={EducationRecord} exact path={['/educationrecord']} />
 

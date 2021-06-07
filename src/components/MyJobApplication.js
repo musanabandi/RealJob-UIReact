@@ -1,4 +1,5 @@
 import React from 'react';
+import 'antd/dist/antd.css';
 import ReactDOM from 'react-dom';
 import JobApplication from '../assets/data/JobApplication.json';
 import { Table, Tag, Space } from 'antd';
@@ -13,10 +14,19 @@ const columns = [
     key: 'campany',
     
   },
+
+
+  {
+    title: 'Position',
+    dataIndex: 'position',
+    key: 'position',
+   
+
    {
     title: 'Position', 
     dataIndex: 'position',
     key: 'position', 
+
   },
 
   {
@@ -25,6 +35,7 @@ const columns = [
     key: 'application date',
    
   },
+
   {
     title: 'Status',
     dataIndex: 'status',
