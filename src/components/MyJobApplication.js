@@ -14,9 +14,9 @@ const columns = [
     
   },
    {
-    title: 'Post', 
-    dataIndex: 'post',
-    key: 'post', 
+    title: 'Position', 
+    dataIndex: 'position',
+    key: 'position', 
   },
 
   {

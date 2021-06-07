@@ -9,13 +9,14 @@ import rjo1 from "../assets/rjo1.jpg";
 import {
   UserOutlined,
   MenuOutlined,
+  FileSearchOutlined,
+  FormOutlined,
+  BankOutlined,
   FolderViewOutlined,
-  InboxOutlined,
-  AppstoreOutlined,
-  UploadOutlined,
-  PlusCircleOutlined,
-  FileOutlined
+  FundViewOutlined,
+  AppstoreAddOutlined
 } from "@ant-design/icons";
+
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -59,7 +60,7 @@ const MainLayout = ({ children }) => {
 
             {store.get("user") ? (
               <>
-              <Menu.Item key="2"> <Link to="/dashboard">Dashboard</Link></Menu.Item>
+              <Menu.Item key="2"> <Link to="/createapplication">Dashboard</Link></Menu.Item>
                 <Menu.Item key="5">
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
@@ -118,43 +119,33 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="1" icon={<MenuOutlined />}>
               Dashboard
             </Menu.Item>
-
             <Menu.Item key="2" icon={<UserOutlined />}>
                Profile
-            <Menu.Item key="2" icon={<PlusCircleOutlined/>}>
-              Profile
             </Menu.Item>
-           
-           
-            <Menu.Item key="9" icon={<FolderViewOutlined />}>
-              View Posted Jobs
+            <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
+             
             </Menu.Item>
-
-            <Menu.Item key="9" icon={<AppstoreOutlined />}>
+            <Menu.Item key="9" icon={<FormOutlined />}><Link to='/makeapplication'> Create Application</Link>
               Create Application
             </Menu.Item>
-            <Menu.Item key="9" icon={<FileOutlined/>}>
-      Application list           
-</Menu.Item>
-<Menu.Item key="2" icon={<PlusCircleOutlined/>}>
-              Create Job
-            </Menu.Item>
-            <Menu.Item key="9" icon={<FileOutlined/>}>
-              View Profiles
+
+            <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Application</Link>
+             
             </Menu.Item>
 
-            <Menu.Item key="9" icon={<AppstoreOutlined />}>
-              List of All Applications
+            <Menu.Item key="10" icon={<FileSearchOutlined />}><Link to='/mypost'> View MyPosted Job</Link>
+              
+            </Menu.Item> 
+
+            <Menu.Item key="10" icon={<FolderViewOutlined />}><Link to='/applicants'>  Applicants List</Link>
+              
             </Menu.Item>
-
-
+            <Menu.Item key="10" icon={<BankOutlined />}><Link to='/createjob'>  Create A Job</Link>
+              
+            </Menu.Item>
           </Menu>
         </Sider>
             </>
-          
-          
-          
-          
           ):null}
 
 
@@ -165,10 +156,6 @@ const MainLayout = ({ children }) => {
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
-JobProviderDashboard
-        Ant Design ©2018 Created by Ryan Group
-
-
 
         Ant Design by Clarisse Damars Media n Ange
       </Footer>
