@@ -1,10 +1,10 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
-import JobProviderDashBoard from '../components/JobProviderDashBoard';
+import JobCreation from '../components/CreateJobComponent';
 const JobProvider =()=> {
     return(
        <MainLayout>
- <JobProviderDashBoard></JobProviderDashBoard>
+ <JobCreation></JobCreation>
        </MainLayout>
     )
 }

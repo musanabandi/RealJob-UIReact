@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
-import { Form, Input, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
+import MainLayout from '../components/MainLayout';
+import { Form, Input, Select, Button, AutoComplete, Card } from 'antd';
 const { Option } = Select;
 const residences = [
   {
@@ -103,6 +104,8 @@ const ProfileForm = () => {
     value: website,
   }));
   return (
+
+    <Card >
     <Form
       {...formItemLayout}
       form={form}
@@ -114,44 +117,7 @@ const ProfileForm = () => {
       }}
       scrollToFirstError
     >
-      
-    { /* <Form.Item
-        name="password"
-        label="Password"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your password!',
-          },
-        ]}
-        hasFeedback
-      >
-        <Input.Password />
-      </Form.Item>
-
-      <Form.Item
-        name="confirm"
-        label="Confirm Password"
-        dependencies={['password']}
-        hasFeedback
-        rules={[
-          {
-            required: true,
-            message: 'Please confirm your password!',
-          },
-          ({ getFieldValue }) => ({
-            validator(_, value) {
-              if (!value || getFieldValue('password') === value) {
-                return Promise.resolve();
-              }
-
-              return Promise.reject(new Error('The two passwords that you entered do not match!'));
-            },
-          }),
-        ]}
-      >
-        <Input.Password />
-      </Form.Item>*/}
+    
 
       
       
@@ -267,23 +233,7 @@ const ProfileForm = () => {
         </AutoComplete>
       </Form.Item>
 
-      {/* <Form.Item
-        name="ID/Passport"
-        label="ID/Passport"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your ID or Passport!',
-          },
-        ]}
-      >
-        <Input
-          addonBefore={prefixSelector}
-          style={{
-            width: '100%',
-          }}
-        />
-      </Form.Item> */}
+     
 
 
 <Form.Item
@@ -361,6 +311,7 @@ const ProfileForm = () => {
         </Button>
       </Form.Item>
     </Form>
+    </Card>
   );
 };
 
