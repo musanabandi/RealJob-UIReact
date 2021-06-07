@@ -87,7 +87,7 @@ const MainLayout = ({ children }) => {
         >
           {sideNavVisible ? (
             <Sider className="site-layout-background" width={200}>
-              <Menu
+              <Menu theme="dark"
                 mode="inline"
                 defaultSelectedKeys={["0"]}
                 defaultOpenKeys={["sub1"]}
@@ -114,6 +114,7 @@ const MainLayout = ({ children }) => {
             </Sider>
           ) : store.get("user")? (
             <>
+
                     <Sider>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<MenuOutlined />}>
@@ -146,6 +147,7 @@ const MainLayout = ({ children }) => {
           </Menu>
         </Sider>
             </>
+            
           ):null}
 
 

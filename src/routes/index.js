@@ -32,7 +32,7 @@ const Index = () => {
               
               <Route component={AllApplicants} exact path={["/applicants"]} />
               <Route component={JobOwner} exact path={["/mypost"]} />
-
+              
               <Route component={JobProvider} exact path={["/createjob"]} />
               <Route component={ProfileForm} exact path={["/profile"]} />
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />

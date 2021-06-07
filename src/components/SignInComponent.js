@@ -18,14 +18,14 @@ const SignInComponent = () => {
     // const response = await RealJobApi.loginAuth(values);
     const response = {status:201};
     // console.log(response);
-    if (!response) {
+    if (!response) { 
       return
     }
     if (response.status === 201) {
       
       store.set('user',{token:'this is my token',role:'jobSeeker'})
 
-      return history.push('/dashboard')
+      return history.push('/home')
     }
   };
 
@@ -34,7 +34,7 @@ const SignInComponent = () => {
 
   return (
     <Card className="card-login">
-
+  
       <Form
         name="normal_login"
         className="login-form"
@@ -45,7 +45,7 @@ const SignInComponent = () => {
         onFinish={onFinish}
 
       >
-       <h2>SignIn</h2>
+       <h2 style={{color:'black'}}>SignIn</h2>
         <Form.Item
           name="email"
           rules={[
