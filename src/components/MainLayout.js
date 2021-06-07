@@ -53,7 +53,7 @@ const MainLayout = ({ children }) => {
                 Home
               </Link>
             </Menu.Item>
-            <Menu.Item key="3">About Us</Menu.Item>
+            <Menu.Item key="3"> <Link to="/aboutus">About Us</Link></Menu.Item>
 
             {store.get("user") ? (
               <>
@@ -95,8 +95,8 @@ const MainLayout = ({ children }) => {
                   icon={<UserOutlined />}
                   title="Jobs Categories"
                 >
-                  <Menu.Item key="0">All Jobs</Menu.Item>
-                  <Menu.Item key="1">Software Enginer</Menu.Item>
+                  <Menu.Item key="0"><Link to="/home">All Jobs</Link></Menu.Item>
+                  <Menu.Item key="1"><Link to="/softawarePage">Software Enginer</Link></Menu.Item>
                   <Menu.Item key="2">
                     Agriculture, Food, Natural Resource
                   </Menu.Item>
