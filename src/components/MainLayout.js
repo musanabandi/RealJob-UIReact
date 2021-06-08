@@ -132,11 +132,11 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
              
             </Menu.Item>
-            <Menu.Item key="9" icon={<FormOutlined />}><Link to='/createapplication'> Create Application</Link>
+            {/* <Menu.Item key="9" icon={<FormOutlined />}><Link to='/createapplication'> Create Application</Link>
               Create Application
-            </Menu.Item>
+            </Menu.Item> */}
 
-            <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Application</Link>
+            <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Applications</Link>
              
             </Menu.Item>
 

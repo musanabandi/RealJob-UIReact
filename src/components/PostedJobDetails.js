@@ -6,31 +6,6 @@ import postedJobData from "../assets/data/postedJobData.json";
 const columns = [
 
   {
-    title: "JobTitle",
-    dataIndex: "jobtitle",
-    key: "obtitle",
-    // render: (text) => <a>{text}</a>,
-  },
-
-  {
-    title: "JobCategory",
-    dataIndex: "jobcategory",
-    key: "jobcategory",
-  },
-
-  {
-    title: "JobLocation",
-    dataIndex: "joblocation",
-    key: "joblocation",
-  },
-
-  {
-    title: "JobOwner",
-    dataIndex: "jobowner",
-    key: "jobowner",
-  },
-
-  {
     title: "PostedTime",
     dataIndex: "postedtime",
     key: "postedtime",
@@ -43,7 +18,33 @@ const columns = [
   },
 
   {
-    title: "Number Of Position",
+    title: "JobTitle",
+    dataIndex: "jobtitle",
+    key: "obtitle",
+    // render: (text) => <a>{text}</a>,
+  },
+
+  // {
+  //   title: "JobCategory",
+  //   dataIndex: "jobcategory",
+  //   key: "jobcategory",
+  // },
+
+  // {
+  //   title: "JobLocation",
+  //   dataIndex: "joblocation",
+  //   key: "joblocation",
+  // },
+
+  // {
+  //   title: "JobOwner",
+  //   dataIndex: "jobowner",
+  //   key: "jobowner",
+  // },
+
+
+  {
+    title: "Number Of Applications",
     dataIndex: "numberofposition",
     key: "numberofposition",
   },
@@ -61,6 +62,7 @@ const columns = [
 
     render: (text, record) => (
       <Space size="middle">
+      <a>View</a>
         <a>Update</a>
         <a>Delete</a>
       </Space>
