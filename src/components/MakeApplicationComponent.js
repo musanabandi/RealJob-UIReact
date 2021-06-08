@@ -2,14 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
-import { Layout, Menu,Form, Input, Card, Button, Upload } from 'antd';
+import { Layout, Menu,Form, Input, Card, Button, Upload,DatePicker } from 'antd';
 import {
-  UserOutlined,
-  MenuOutlined,
-  FolderViewOutlined,
+  
   InboxOutlined,
-  AppstoreOutlined,
-  UploadOutlined
+  UploadOutlined,
  
 } from '@ant-design/icons';
 
@@ -23,7 +20,7 @@ const JobSeekerApplication = () => {
             span: 6,
         },
         wrapperCol: {
-            span: 12,
+            span: 8,
         },
     };
 
@@ -44,6 +41,7 @@ const JobSeekerApplication = () => {
 
 
 <Card >
+    <h1 style={{fontSize:'25px',color:'grey', marginLeft:'200px' }}> Create Application</h1>
             <Form
                 name="validate_other"
                 {...formItemLayout}
@@ -53,11 +51,24 @@ const JobSeekerApplication = () => {
 
                 }}>
 
-               <div className='dashboard-content'>
-                   <p>JobPosition:</p>
-                   <p>Posted Date:</p>
-                   <p>DeadLine:</p>
-               </div>
+               
+
+        <Form.Item label="JobPosition">
+        <Input className= "input"/>
+        </Form.Item>
+
+        <Form.Item label="PostedTime">
+        <DatePicker />
+
+        </Form.Item>
+        <Form.Item label="Deadline">
+          <DatePicker />
+        </Form.Item>
+
+        
+        <Form.Item label="ApplicationDate">
+          <DatePicker />
+        </Form.Item>
 
 
 
@@ -87,14 +98,14 @@ const JobSeekerApplication = () => {
               <InboxOutlined />
             </p>
             <p className="ant-upload-text">Click Here to upload your Resume</p>
-            {/* <p className="ant-upload-hint">Support for a single or bulk upload.</p> */}
+         
           </Upload.Dragger>
         </Form.Item>
       </Form.Item>
 
 
 
-                <Button type="primary" htmlType="submit" className="button">
+                <Button type="primary" htmlType="submit" className="createapp-button">
                     Submit
         </Button>
 

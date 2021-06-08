@@ -1,14 +1,15 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
-// import JobProviderDashBoard from '../components/JobProviderDashBoard';
 import ProfileForm from '../components/ProfileForm';
+import EducationRecord from '../components/EducationRecords';
 
-const JobProvider =()=> {
+const JobProfile =()=> {
     return(
        <MainLayout>
- {/* <JobProviderDashBoard></JobProviderDashBoard> */}
+
  <ProfileForm></ProfileForm>
+ <EducationRecord></EducationRecord>
        </MainLayout>
     )
 }
-export  default  JobProvider;
+export  default  JobProfile;

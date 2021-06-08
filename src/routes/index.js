@@ -7,13 +7,20 @@ import JobSeeker from '../views/JobSeeker'
 import AllApplicants from '../views/ListApp'
 import JobOwner from '../views/JobOwnerDetails'
 import JobProvider from '../views/JobProvider';
-import ProfileForm from '../components/ProfileForm';
+import  JobProfile from '../views/Profile'
 import MyJobApplication from '../views/MyJobApplicationViews';
-
 import AboutUs from '../views/AboutUsViews';
 import Software from '../views/SoftwareViews';
 
-import EducationRecord from '../components/EducationRecords';
+import Agriculture from '../views/AgricultureViews';
+import Hotel from '../views/HotelViews';
+import Health from '../views/HealthViews';
+import Business from '../views/BusinessViews';
+import Information from '../views/InformationViews';
+import Transport from '../views/TransportViews';
+
+import  EdicationRecordProfile from '../views/Education';
+
 
 
 
@@ -32,14 +39,26 @@ const Index = () => {
               
               <Route component={AllApplicants} exact path={["/applicants"]} />
               <Route component={JobOwner} exact path={["/mypost"]} />
-
+              
               <Route component={JobProvider} exact path={["/createjob"]} />
-              <Route component={ProfileForm} exact path={["/profile"]} />
+              <Route component={ JobProfile} exact path={["/profile"]} />
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />
+
 <Route component={AboutUs} exact path={["/aboutus"]} />
     <Route component={Software} exact path={["/softawarePage"]} />
+    <Route component={Agriculture} exact path={["/agriculturePage"]} />
+    
+    <Route component={Transport} exact path={["/transportPage"]} />
+    <Route component={Hotel} exact path={["/hotelPage"]} />
+    <Route component={Information} exact path={["/informationPage"]} />
+    <Route component={Health} exact path={["/healthPage"]} />
+    <Route component={Business} exact path={["/businessPage"]} />
 
-              <Route component={EducationRecord} exact path={['/educationrecord']} />
+              <Route component={AboutUs} exact path={["/aboutus"]} />
+              <Route component={Software} exact path={["/softawarePage"]} />
+
+              <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+
 
 
         </Switch>
