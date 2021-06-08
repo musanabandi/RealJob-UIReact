@@ -29,12 +29,13 @@ const layout = () => {
                 {job.type}
               </h3>
 
-              <hr></hr>
+              <hr style={{color:'grey', opacity:'0.2'}}></hr>
 
               <div>
-                <h3>Posted by: <b>  {job.postedBy}</b></h3>
+                <h3 style={{fontStyle:'Times New Roman'}}>Posted by: <b>  {job.postedBy}</b></h3>
 
-                <h3>Posted On: {job.postedTime}</h3>
+                <h3 style={{fontStyle:'Times New Roman'}}>Posted On: {job.postedTime}</h3>
+                
                 <div className="icons-home">
                 <StarOutlined className="star-icon"/>
                 &nbsp;&nbsp;&nbsp;

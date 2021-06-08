@@ -20,7 +20,7 @@ const columns = [
     title: 'Position',
     dataIndex: 'position',
     key: 'position',
-   
+  },
 
    {
     title: 'Position', 

@@ -105,8 +105,9 @@ const ProfileForm = () => {
   }));
   return (
 
-    <Card >
-    <Form
+    <Card  >
+      <h1 style={{fontSize:'20px', marginLeft:'300px'}}>Please You Can Fill This Form</h1>
+    <Form className="profile-form"
       {...formItemLayout}
       form={form}
       name="Save profile"
@@ -303,10 +304,11 @@ const ProfileForm = () => {
       
       
       <Form.Item {...tailFormItemLayout}>
-        <Button type="primary" htmlType="submit">
+        <Button type="primary" htmlType="submit" style={{marginLeft:'-200px'}}>
           Save Profile
         </Button>
-        <Button type="secondary" htmlType="cancel">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Button type="Danger" htmlType="cancel" style={{color:'red'}}>
           Cancel
         </Button>
       </Form.Item>

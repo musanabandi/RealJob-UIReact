@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
 import { Form, Input, Cascader, Select, Row, Col, Checkbox, Button,  DatePicker,
-    AutoComplete } from 'antd';
+    AutoComplete,Card } from 'antd';
 const { Option } = Select;
 const residences = [
   {
@@ -105,7 +105,9 @@ const EducationRecord = () => {
     value: website,
   }));
   return (
-    <Form
+    <Card>
+<h1 style={{fontSize:'20px', marginLeft:'300px'}}>Education Records Form</h1>
+    <Form className="education-profile"
       {...formItemLayout}
       form={form}
       name="Save your Education Records"
@@ -116,7 +118,7 @@ const EducationRecord = () => {
       }}
       scrollToFirstError
     >
-      <h1> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Education Records Form</h1>
+      
           
       <Form.Item
       
@@ -275,13 +277,16 @@ const EducationRecord = () => {
       
       
       <Form.Item {...tailFormItemLayout}>
-        <Button type="primary" htmlType="submit">
-        Save your Education Records        </Button>
-        <Button type="secondary" htmlType="cancel">
+        <Button type="primary" htmlType="submit" style={{marginLeft:'-200px'}}>
+        Save Records        
+        </Button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Button type="secondary" htmlType="cancel" style={{color:'red'}}>
           Cancel
         </Button>
       </Form.Item>
-    </Form>          
+    </Form> 
+    </Card>         
 
   );
 };
