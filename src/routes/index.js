@@ -7,13 +7,11 @@ import JobSeeker from '../views/JobSeeker'
 import AllApplicants from '../views/ListApp'
 import JobOwner from '../views/JobOwnerDetails'
 import JobProvider from '../views/JobProvider';
-import ProfileForm from '../components/ProfileForm';
+import  JobProfile from '../views/Profile'
 import MyJobApplication from '../views/MyJobApplicationViews';
-
 import AboutUs from '../views/AboutUsViews';
 import Software from '../views/SoftwareViews';
-
-import EducationRecord from '../components/EducationRecords';
+import  EdicationRecordProfile from '../views/Education';
 
 
 
@@ -34,12 +32,12 @@ const Index = () => {
               <Route component={JobOwner} exact path={["/mypost"]} />
               
               <Route component={JobProvider} exact path={["/createjob"]} />
-              <Route component={ProfileForm} exact path={["/profile"]} />
+              <Route component={ JobProfile} exact path={["/profile"]} />
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />
-<Route component={AboutUs} exact path={["/aboutus"]} />
-    <Route component={Software} exact path={["/softawarePage"]} />
+              <Route component={AboutUs} exact path={["/aboutus"]} />
+              <Route component={Software} exact path={["/softawarePage"]} />
 
-              <Route component={EducationRecord} exact path={['/educationrecord']} />
+              <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
 
 
         </Switch>

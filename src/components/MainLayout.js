@@ -29,6 +29,12 @@ const HandleSignOut = () => {
 };
 
 const MainLayout = ({ children }) => {
+
+  const [collapsed, setCollapsed] = useState(false)
+  const onCollapse = (collapsed)=>{
+    setCollapsed(collapsed)
+  }
+
   const [sideNavVisible, setSideNavVisible] = useState(false);
   const [urlPathname, setUrlPathname] = useState(window.location.pathname);
 
@@ -86,12 +92,12 @@ const MainLayout = ({ children }) => {
           style={{ padding: "24px 0" }}
         >
           {sideNavVisible ? (
-            <Sider className="site-layout-background" width={200}>
-              <Menu theme="dark"
+            <Sider collapsible collapsed ={collapsed} onCollapse={onCollapse}  className="site-layout-background" widows={400} style={{ backgroundColor:"dark", minHeight:'100vh', }} >
+              <Menu theme="white"
                 mode="inline"
                 defaultSelectedKeys={["0"]}
                 defaultOpenKeys={["sub1"]}
-                style={{ height: "100%" }}
+                style={{ height: "100" }}
               >
                 <SubMenu
                   key="sub1"
@@ -120,13 +126,13 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="1" icon={<MenuOutlined />}>
               Dashboard
             </Menu.Item>
-            <Menu.Item key="2" icon={<UserOutlined />}>
-               Profile
+            <Menu.Item key="2" icon={<UserOutlined />}><Link to='/profile'>  Profile</Link>
+              
             </Menu.Item>
             <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
              
             </Menu.Item>
-            <Menu.Item key="9" icon={<FormOutlined />}><Link to='/makeapplication'> Create Application</Link>
+            <Menu.Item key="9" icon={<FormOutlined />}><Link to='/createapplication'> Create Application</Link>
               Create Application
             </Menu.Item>
 
@@ -147,7 +153,7 @@ const MainLayout = ({ children }) => {
           </Menu>
         </Sider>
             </>
-            
+
           ):null}
 
 
@@ -159,7 +165,7 @@ const MainLayout = ({ children }) => {
 
       <Footer style={{ textAlign: "center" }}>
 
-        Ant Design by Clarisse Damars Media n Ange
+        Ant Design by Clarisse Damars Media and Ange
       </Footer>
     </Layout>
   );
