@@ -7,7 +7,12 @@ import JobSeeker from '../views/JobSeeker';
 import MyJobApplication from '../views/MyJobApplicationViews';
 import AboutUs from '../views/AboutUsViews';
 import Software from '../views/SoftwareViews';
-
+import Agriculture from '../views/AgricultureViews';
+import Hotel from '../views/HotelViews';
+import Health from '../views/HealthViews';
+import Business from '../views/BusinessViews';
+import Information from '../views/InformationViews';
+import Transport from '../views/TransportViews';
 
 const Index = () => {
 
@@ -23,8 +28,13 @@ const Index = () => {
               <Route component={MyJobApplication} exact path={['/myjobapplication']} />
 <Route component={AboutUs} exact path={["/aboutus"]} />
     <Route component={Software} exact path={["/softawarePage"]} />
-
-             
+    <Route component={Agriculture} exact path={["/agriculturePage"]} />
+    
+    <Route component={Transport} exact path={["/transportPage"]} />
+    <Route component={Hotel} exact path={["/hotelPage"]} />
+    <Route component={Information} exact path={["/informationPage"]} />
+    <Route component={Health} exact path={["/healthPage"]} />
+    <Route component={Business} exact path={["/businessPage"]} />
         </Switch>
 
     )
