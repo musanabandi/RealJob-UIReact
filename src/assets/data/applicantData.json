@@ -1,0 +1,46 @@
+[
+    
+    {
+        "names":"Uwitonze Mediatrice",
+        "position":"Software Developer",
+        "applicationDate":"3 june 2021 10:30 am",
+        "action":["View"],
+        "status":["Shortlisted"]
+       
+
+    },
+
+    {
+        "names":"Kankera Damars",
+        "position":"Network Administrator",
+        "applicationDate":"3 June 2021 10:30 am",
+        "action":["View"],
+        "status":["Shortlisted"]
+       
+
+    },
+    
+
+    {
+        "names":"Iradukunda Clarisse",
+        "position":"Database Administrator",
+        "applicationDate":"3 june 2021 10:30 am",
+        "action":["View"],
+        "status":["Shortlisted"]
+       
+
+    },
+    
+
+    {
+        "names":"Ange Polyne",
+        "position":"Network Security",
+        "applicationDate":"3 june 2021 10:30 am",
+        "action":["View"],
+        "status":["Rejected"]
+       
+
+    }
+    
+    
+]

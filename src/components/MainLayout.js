@@ -9,11 +9,14 @@ import rjo1 from "../assets/rjo1.jpg";
 import {
   UserOutlined,
   MenuOutlined,
+  FileSearchOutlined,
+  FormOutlined,
+  BankOutlined,
   FolderViewOutlined,
-  InboxOutlined,
-  AppstoreOutlined,
-  UploadOutlined,
+  FundViewOutlined,
+  AppstoreAddOutlined
 } from "@ant-design/icons";
+
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -26,6 +29,12 @@ const HandleSignOut = () => {
 };
 
 const MainLayout = ({ children }) => {
+
+  const [collapsed, setCollapsed] = useState(false)
+  const onCollapse = (collapsed)=>{
+    setCollapsed(collapsed)
+  }
+
   const [sideNavVisible, setSideNavVisible] = useState(false);
   const [urlPathname, setUrlPathname] = useState(window.location.pathname);
 
@@ -57,7 +66,7 @@ const MainLayout = ({ children }) => {
 
             {store.get("user") ? (
               <>
-              <Menu.Item key="2"> <Link to="/dashboard">Dashboard</Link></Menu.Item>
+              <Menu.Item key="2"> <Link to="/createapplication">Dashboard</Link></Menu.Item>
                 <Menu.Item key="5">
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
@@ -83,12 +92,12 @@ const MainLayout = ({ children }) => {
           style={{ padding: "24px 0" }}
         >
           {sideNavVisible ? (
-            <Sider className="site-layout-background" width={200}>
-              <Menu
+            <Sider collapsible collapsed ={collapsed} onCollapse={onCollapse}  className="site-layout-background" widows={400} style={{ backgroundColor:"dark", minHeight:'100vh', }} >
+              <Menu theme="white"
                 mode="inline"
                 defaultSelectedKeys={["0"]}
                 defaultOpenKeys={["sub1"]}
-                style={{ height: "100%" }}
+                style={{ height: "100" }}
               >
                 <SubMenu
                   key="sub1"
@@ -111,29 +120,42 @@ const MainLayout = ({ children }) => {
             </Sider>
           ) : store.get("user")? (
             <>
+
                     <Sider>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<MenuOutlined />}>
-              JobSeekerDashboard
+              Dashboard
             </Menu.Item>
-            <Menu.Item key="2" icon={<UserOutlined />}>
-              Create Profile
+            <Menu.Item key="2" icon={<UserOutlined />}><Link to='/profile'>  Profile</Link>
+              
             </Menu.Item>
-           
-           
-            <Menu.Item key="9" icon={<FolderViewOutlined />}>
-              View Posted Job
+            <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
+             
             </Menu.Item>
-
-            <Menu.Item key="9" icon={<AppstoreOutlined />}>
+            <Menu.Item key="9" icon={<FormOutlined />}><Link to='/createapplication'> Create Application</Link>
               Create Application
             </Menu.Item>
 
+            <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Application</Link>
+             
+            </Menu.Item>
 
+            <Menu.Item key="10" icon={<FileSearchOutlined />}><Link to='/mypost'> View MyPosted Job</Link>
+              
+            </Menu.Item> 
+
+            <Menu.Item key="10" icon={<FolderViewOutlined />}><Link to='/applicants'>  Applicants List</Link>
+              
+            </Menu.Item>
+            <Menu.Item key="10" icon={<BankOutlined />}><Link to='/createjob'>  Create A Job</Link>
+              
+            </Menu.Item>
           </Menu>
         </Sider>
             </>
+
           ):null}
+
 
           <Content style={{ padding: "0 24px", minHeight: "100vh" }}>
             {children}
@@ -142,7 +164,8 @@ const MainLayout = ({ children }) => {
       </Content>
 
       <Footer style={{ textAlign: "center" }}>
-        Ant Design by Clarisse Damars Media n Ange
+
+        Ant Design by Clarisse Damars Media and Ange
       </Footer>
     </Layout>
   );
