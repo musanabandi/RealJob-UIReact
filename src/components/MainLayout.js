@@ -106,15 +106,15 @@ const MainLayout = ({ children }) => {
                 >
                   <Menu.Item key="0"><Link to="/home">All Jobs</Link></Menu.Item>
                   <Menu.Item key="1"><Link to="/softawarePage">Software Enginer</Link></Menu.Item>
-                  <Menu.Item key="2">
-                    Agriculture, Food, Natural Resource
+                  <Menu.Item key="2"><Link to="/agriculturePage">Agriculture, Food, Natural Resource</Link>
+                    
                   </Menu.Item>
-                  <Menu.Item key="3">Man-power</Menu.Item>
-                  <Menu.Item key="4">Business Management</Menu.Item>
-                  <Menu.Item key="5">Health Science</Menu.Item>
-                  <Menu.Item key="6">Transport and Logistics</Menu.Item>
-                  <Menu.Item key="7">Information Technology</Menu.Item>
-                  <Menu.Item key="8">Hotel and Restaurants</Menu.Item>
+                  <Menu.Item key="3"><Link to="/manpowerPage">Man-power</Link></Menu.Item>
+                  <Menu.Item key="4"><Link to="/businessPage">Business Management</Link></Menu.Item>
+                  <Menu.Item key="5"><Link to="/healthPage">Health Science</Link></Menu.Item>
+                  <Menu.Item key="6"><Link to="/transportPage">Transport and Logistics</Link></Menu.Item>
+                  <Menu.Item key="7"><Link to="/informationPage">Information Technology</Link></Menu.Item>
+                  <Menu.Item key="8"><Link to="/hotelPage">Hotel and Restaurants</Link></Menu.Item>
                 </SubMenu>
               </Menu>
             </Sider>

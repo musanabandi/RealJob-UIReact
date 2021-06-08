@@ -17,11 +17,11 @@ const allJobs = jobs;
 const layout = () => {
   console.log("<><><<;", allJobs[0]);
   return (
-    <Card style={{width:'100%'}}>
+    <Card style={{width:'100%'}} >
       {allJobs.map((job) => {
         return (
-          <Card.Grid>
-            <div class="card-container">
+          <Card.Grid> &nbsp;
+            <div class="card-container"> <Link to="/viewpost"></Link>
               <h1 >
                <b><i>{job.title}</i> </b> 
               </h1>
@@ -53,7 +53,7 @@ const layout = () => {
                 </button>
 
             </div>
-          </Card.Grid>
+            </Card.Grid>
         );
       })}
     </Card>

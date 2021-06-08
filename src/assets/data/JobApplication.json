@@ -1,33 +1,54 @@
  [
   {
     
+
+   
+
     "position": "Software ",
+
     "company": "Hview Tech",
-    "application date": "2 march 2020 10:30 Pm",
+     "position": " Backend Developer",
+    "application-date": "2 march 2020 11:00 Pm",
     "status": ["Shortlisted"],
     "action": "Details"
   },
   {
     
+
+    
+    "company":  " P plus Tech",
+     "position": "Software Developer",
+    "application-date": "2 march 2020 10:30 Pm",
+
     "position": "Software Developer",
     "company": "Hview Tech",
     "application date": "2 march 2020 10:30 Pm",
+
     "status": ["Shortlisted"],
     "action": "Details"
+   
   },
   {
     
+
+    
+
     "position": "Software Developer",
+
     "company": "Hview Tech",
-    "application date": "1sept 2020 10:30 Pm",
+    "position": "Software Developer",
+    "application-date": "1sept 2020 10:30 Pm",
     "status": ["Shortlisted"],
     "action": "Details"
   },
   {
     
+
     "position": "Quality Manager",
+
     "company": "Inyange Industry",
-    "application date": "2 may 2021 10:30 Pm",
+    "position": "Quality Manager",
+    "application-date": "2 may 2021 10:30 Pm",
     "status": ["Shortlisted"],
     "action": "Details"
   }
