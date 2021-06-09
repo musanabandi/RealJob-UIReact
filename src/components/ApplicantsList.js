@@ -24,6 +24,12 @@ const columns = [
     key: "applicationDate",
   },
 
+  {
+    title: "Status",
+    dataIndex: "status",
+    key: "status",
+
+  },
  
   {
     title: "Action",
@@ -32,25 +38,14 @@ const columns = [
     render: (text, record) => (
       <Space size="middle">
         <a>View</a>
-        <a>Reply</a>
+        <a style={{color:'green'}}>Admit</a>
+        <a style={{color:'red'}}>Reject</a>
       </Space>
     ),
 
     
   },
 
-  {
-    title: "Status",
-    dataIndex: "status",
-    key: "status",
-
-    // render: (text, record) => (
-    //   <Space size="middle">
-    //     <a>ShortListed</a>
-       
-    //   </Space>
-    // ),
-  },
  
 ];
 const ApplicantsList = () => {
