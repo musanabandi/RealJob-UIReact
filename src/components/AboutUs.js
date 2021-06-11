@@ -32,7 +32,7 @@ independent talent from around the globe meet here to accomplish incredible thin
 
 <h1>Start your journey</h1>
 &nbsp; &nbsp;
-<button className="about-button"> <Link to="/signin">Find Job</Link></button>
+<button className="about-button"> <Link to="/home">Find Job</Link></button>
 </Card>
     );
 };
