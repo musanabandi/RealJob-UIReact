@@ -2,7 +2,7 @@
     
     {
         "names":"Uwitonze Mediatrice",
-        "position":"Software Developer",
+        "jobtitle":"Software Developer",
         "applicationDate":"3 june 2021 10:30 am",
         "action":["View"],
         "status":["Shortlisted"]
@@ -12,7 +12,7 @@
 
     {
         "names":"Kankera Damars",
-        "position":"Network Administrator",
+        "jobtitle":"Network Administrator",
         "applicationDate":"3 June 2021 10:30 am",
         "action":["View"],
         "status":["Shortlisted"]
@@ -23,7 +23,7 @@
 
     {
         "names":"Iradukunda Clarisse",
-        "position":"Database Administrator",
+        "jobtitle":"Database Administrator",
         "applicationDate":"3 june 2021 10:30 am",
         "action":["View"],
         "status":["Shortlisted"]
@@ -34,7 +34,7 @@
 
     {
         "names":"Ange Polyne",
-        "position":"Network Security",
+        "jobtitle":"Network Security",
         "applicationDate":"3 june 2021 10:30 am",
         "action":["View"],
         "status":["Rejected"]

@@ -13,9 +13,9 @@ const columns = [
   },
 
   {
-    title: "Position",
-    dataIndex: "position",
-    key: "position",
+    title: "JobTitle",
+    dataIndex: "jobtitle",
+    key: "jobtitle",
   },
 
   {
@@ -51,7 +51,7 @@ const columns = [
 const ApplicantsList = () => {
   return( 
   <div>
-    <h1 className="title-details"> <strong> All Applicants List</strong></h1>
+    <h1 className="title-details"> <strong> List of All Applicants </strong></h1>
   <Table columns={columns} dataSource={applicantData} />
   </div>
   )

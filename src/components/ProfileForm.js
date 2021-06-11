@@ -5,40 +5,7 @@ import './index.css';
 import MainLayout from '../components/MainLayout';
 import { Form, Input, Select, Button, AutoComplete, Card } from 'antd';
 const { Option } = Select;
-const residences = [
-  {
-    value: 'zhejiang',
-    label: 'Zhejiang',
-    children: [
-      {
-        value: 'hangzhou',
-        label: 'Hangzhou',
-        children: [
-          {
-            value: 'xihu',
-            label: 'West Lake',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    value: 'jiangsu',
-    label: 'Jiangsu',
-    children: [
-      {
-        value: 'nanjing',
-        label: 'Nanjing',
-        children: [
-          {
-            value: 'zhonghuamen',
-            label: 'Zhong Hua Men',
-          },
-        ],
-      },
-    ],
-  },
-];
+
 const formItemLayout = {
   labelCol: {
     xs: {
@@ -106,7 +73,7 @@ const ProfileForm = () => {
   return (
 
     <Card  >
-      <h1 style={{fontSize:'20px', marginLeft:'300px'}}>Please You Can Fill This Form</h1>
+      <h1 style={{fontSize:'20px', marginLeft:'300px'}}>User Profile Form</h1>
     <Form className="profile-form"
       {...formItemLayout}
       form={form}
@@ -281,7 +248,6 @@ const ProfileForm = () => {
         <Select placeholder="select your gender">
           <Option value="male">Male</Option>
           <Option value="female">Female</Option>
-          <Option value="other">Other</Option>
         </Select>
       </Form.Item>
 
@@ -317,5 +283,5 @@ const ProfileForm = () => {
   );
 };
 
-//ReactDOM.render(<RegistrationForm />, document.getElementById('container'));
+
 export default ProfileForm;

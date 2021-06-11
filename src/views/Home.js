@@ -1,15 +1,21 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
 import HomeComponent from '../components/HomeComponent';
+import HomePage from  '../components/HomePage';
 
 
-const Home = () => {
+
+
+const Homecard= () => {
 
     return (
 
 
         <MainLayout>
+            <HomePage></HomePage>
+        
            <HomeComponent></HomeComponent>
+           
            
                 
         </MainLayout>
@@ -17,7 +23,7 @@ const Home = () => {
 
 }
 
-export default Home;
+export default Homecard;
 
 
 

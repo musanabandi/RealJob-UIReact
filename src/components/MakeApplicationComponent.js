@@ -40,9 +40,10 @@ const JobSeekerApplication = () => {
 
 
 
-<Card >
-    <h1 style={{fontSize:'25px',color:'grey', marginLeft:'200px' }}> Create Application</h1>
-            <Form
+<Card style={{height:'100vh'}}>
+<h1 className="title-details"> <strong> Apply On This Form </strong></h1>
+   
+            <Form className='create-application'
                 name="validate_other"
                 {...formItemLayout}
                 onFinish={onFinish}
@@ -51,20 +52,7 @@ const JobSeekerApplication = () => {
 
                 }}>
 
-               
-
-        <Form.Item label="JobPosition">
-        <Input className= "input"/>
-        </Form.Item>
-
-        <Form.Item label="PostedTime">
-        <DatePicker />
-
-        </Form.Item>
-        <Form.Item label="Deadline">
-          <DatePicker />
-        </Form.Item>
-
+        
         
         <Form.Item label="ApplicationDate">
           <DatePicker />
@@ -106,7 +94,7 @@ const JobSeekerApplication = () => {
 
 
                 <Button type="primary" htmlType="submit" className="createapp-button">
-                    Submit
+                    Apply
         </Button>
 
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
+import './register.css';
 import RealJobApi from '../services/apiRealJob';
 import { useHistory } from 'react-router-dom'
 import { Form, Input, Select, Checkbox, Button,  Card } from 'antd';
@@ -61,6 +62,7 @@ const SignUpComponent = () => {
    
     
     return (
+        <Card className='card-signup'>
 
         <Card className="card-register">
 
@@ -298,6 +300,7 @@ const SignUpComponent = () => {
         </Button>
                 </Form.Item>
             </Form>
+        </Card>
         </Card>
         
     );

@@ -68,6 +68,7 @@ const MainLayout = ({ children }) => {
               <>
               <Menu.Item key="2"> <Link to="/progress
               ">Dashboard</Link></Menu.Item>
+              <Menu.Item key="2"> <Link to="/progress">Dashboard</Link></Menu.Item>
                 <Menu.Item key="5">
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
@@ -90,7 +91,9 @@ const MainLayout = ({ children }) => {
       <Content style={{ padding: "0 0px", width: "100%" }}>
         <Layout
           className="site-layout-background"
-          style={{ padding: "24px 0" }}
+
+          style={{ padding: "0px 0px 0px 0px" }}
+
         >
           {sideNavVisible ? (
             <Sider collapsible collapsed ={collapsed} onCollapse={onCollapse}  className="site-layout-background" widows={400} style={{ backgroundColor:"dark", minHeight:'100vh', }} >
@@ -130,6 +133,11 @@ const MainLayout = ({ children }) => {
             <Menu.Item key="2" icon={<UserOutlined />}><Link to='/profile'>  Profile</Link>
               
             </Menu.Item>
+
+            <Menu.Item key="3" icon={<UserOutlined />}><Link to='/viewprofile'>  View Profile</Link>
+              
+              </Menu.Item>
+
             <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
              
             </Menu.Item>
@@ -158,7 +166,9 @@ const MainLayout = ({ children }) => {
           ):null}
 
 
-          <Content style={{ padding: "0 24px", minHeight: "100vh" }}>
+
+          <Content style={{ padding: "0 0px", minHeight: "100vh" }}>
+
             {children}
           </Content>
         </Layout>
@@ -166,7 +176,7 @@ const MainLayout = ({ children }) => {
 
       <Footer style={{ textAlign: "center" }}>
 
-        Ant Design by Clarisse Damars Media and Ange
+         Design by Clarisse Damars Media and Ange
       </Footer>
     </Layout>
   );

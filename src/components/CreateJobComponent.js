@@ -13,6 +13,7 @@ import {
   InputNumber,
   TreeSelect,
   Switch,
+  Card,
 } from 'antd';
 const JobCreation = () => {
  const [componentSize, setComponentSize] = useState('default');
@@ -22,8 +23,9 @@ const JobCreation = () => {
   };
 
   return (
-    <>
-      <Form
+    
+<Card>
+      <Form className='create-job'
         labelCol={{
           span: 6,
         }}
@@ -39,7 +41,7 @@ const JobCreation = () => {
       >
 
 
-          <h1>Job Creation Form</h1>
+          <h1 style={{fontSize:'25px', marginLeft:'100px'}}>Create Job Form</h1>
        
         <Form.Item label="JobTitle">
           <Input className= "input"/>
@@ -49,6 +51,10 @@ const JobCreation = () => {
             <Select.Option value="demo">Dentist</Select.Option>
           </Select>
         </Form.Item>
+
+        <Form.Item name={['user', 'comment']} label="JobDescription" >
+                <Input.TextArea className='content-comment'/>
+                </Form.Item>
         <Form.Item label="JobLocation">
           <TreeSelect
             treeData={[
@@ -98,7 +104,8 @@ const JobCreation = () => {
           >Create</Button>
         </Form.Item>
       </Form>
-    </>
+      </Card>
+    
   );
 };
 

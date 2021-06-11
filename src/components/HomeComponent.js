@@ -13,9 +13,12 @@ import jobs from "../assets/data/job.json";
 
 const allJobs = jobs;
 
+
 const layout = () => {
-  // console.log("<><><<;", allJobs[0]);
+  
+  
   return (
+
     <Card style={{ width: "100%" , minHeight:'100vh' }}>
       {allJobs.map((job) => {
         return (
