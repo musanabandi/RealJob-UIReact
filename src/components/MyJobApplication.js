@@ -1,12 +1,18 @@
-import React ,{useState}from 'react';
+import React ,{ useState }from 'react';
 import 'antd/dist/antd.css';
 import ReactDOM from 'react-dom';
 import JobApplication from '../assets/data/JobApplication.json';
-import { Table, Tag, Space ,Button,notification, Modal} from 'antd';
+
+import { Table, Tag, Space ,Button,notification, Modal, Card} from 'antd';
+import {Link} from 'react-router-dom';
+import ViewPost from '../components/ViewPost';
+
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 
 
+
+const MyJobApplication=() =>{
 const columns = [
  
   {
@@ -78,22 +84,27 @@ const columns = [
       
 
       <Space size="middle">
-         
+
+        
+        <Button type="primary" onClick={()=> setVisible(true)}>
+        View
+        </Button>
+
+        <a style={{color: 'red'}} onClick={handleCancel}   >Cancel</a>
+
         <a>View</a>
         <a style={{color: 'red'}} onClick={showConfirm} >Cancel</a>
+
       </Space>
       
     )}
     
-  }
+  },
+
+  
 ]
 
-
-
-
-
-
-const MyJobApplication=() =>{
+const [visible, setVisible] = useState(false);
 
   const [sortedInfo, setSortedInfo]=useState(null);
 
@@ -111,11 +122,35 @@ const handleChange = (pagination,  sorter) => {
       <div>
         <h1 className="title-details"> <strong> List of My Applications</strong></h1>
 
-        (<Table columns={columns} dataSource={JobApplication} onChange={handleChange} />)
+
+      <>
+    <Table columns={columns} dataSource={JobApplication} onChange={handleChange} />
+
+    
+     
+      <Modal
+        
+        centered
+        visible={visible}
+        onOk={() => setVisible(false)}
+        onCancel={() => setVisible(false)}
+        width={1000}
+      >
+        <ViewPost></ViewPost>
+      </Modal>
+  </>
+
         </div>
         
+
     );
 };
+
+
+     
+  
+  
+
 
 
 export default MyJobApplication;

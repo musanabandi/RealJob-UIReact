@@ -16,6 +16,7 @@
   .site-layout-background {
     background: #fff;
     
+    
   }
 
   .side-bar{
@@ -23,6 +24,7 @@
     justify-content: space-between;
     float:right;
     margin-right: 12px;
+    display: flex;
     
   }
   .rjo{
@@ -35,6 +37,33 @@
   .title{
     font-weight: bolder;
     margin-left: 20em;
+  }
+  .homeeee{
+    font-size:40px;
+    font-style: oblique;
+    color: rgb(35, 163, 214);
+    text-align: center;
+    margin-top: 2px; 
+  }
+  .home-h2{
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    margin-top: 30px;
+    /* background-image: url("../assets/jobsearch.jpg"); */
+
+  }
+  .home-page{
+    /* opacity: 0.8;
+    margin-top: -24px; */
+    /* background-color: skyblue; */
+    background-image: url("../assets/pp.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
   }
   .card-container{
     text-align: center;
