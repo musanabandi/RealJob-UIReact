@@ -19,7 +19,9 @@ import Business from '../views/BusinessViews';
 import Information from '../views/InformationViews';
 import Transport from '../views/TransportViews';
 import  EdicationRecordProfile from '../views/Education';
-
+import TrainingRecord from '../views/Training';
+import Reference from '../views/Reference';
+import ProgressView from '../views/ProgressView';
 
 
 
@@ -54,6 +56,7 @@ const Index = () => {
     <Route component={Health} exact path={["/healthPage"]} />
     <Route component={Business} exact path={["/businessPage"]} />
 
+
               <Route component={AboutUs} exact path={["/aboutus"]} />
               <Route component={Software} exact path={["/softawarePage"]} />
 
@@ -61,6 +64,14 @@ const Index = () => {
              
 
 
+   <Route component={AboutUs} exact path={["/aboutus"]} />
+  <Route component={Software} exact path={["/softawarePage"]} />
+ <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+
+
+<Route component={TrainingRecord} exact path={['/training']} />
+<Route component={Reference} exact path={['/reference']} />
+<Route component={ProgressView} exact path={['/progress']} />
 
         </Switch>
 
