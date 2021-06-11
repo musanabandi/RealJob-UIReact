@@ -1,11 +1,13 @@
-import React ,{useState}from 'react';
+import React ,{ useState }from 'react';
 import 'antd/dist/antd.css';
 import ReactDOM from 'react-dom';
 import JobApplication from '../assets/data/JobApplication.json';
-import { Table, Tag, Space ,Button,notification} from 'antd';
+import { Table, Tag, Space ,Button,notification, Modal, Card} from 'antd';
+import {Link} from 'react-router-dom';
+import ViewPost from '../components/ViewPost';
 
 
-
+const MyJobApplication=() =>{
 const columns = [
  
   {
@@ -49,20 +51,21 @@ const columns = [
     return(
 
       <Space size="middle">
-        <a>View</a>
-        <a style={{color: 'red'}} onClick={handleCancel}>Cancel</a>
+        
+        <Button type="primary" onClick={()=> setVisible(true)}>
+        View
+        </Button>
+
+        <a style={{color: 'red'}} onClick={handleCancel}   >Cancel</a>
       </Space>
     )}
     
-  }
+  },
+
+  
 ]
 
-
-
-
-
-
-const MyJobApplication=() =>{
+const [visible, setVisible] = useState(false);
 
   const [sortedInfo, setSortedInfo]=useState(null);
 
@@ -73,11 +76,33 @@ const handleChange = (pagination,  sorter) => {
     setSortedInfo( sorter)
 
 };
+
     return (
 
-        (<Table columns={columns} dataSource={JobApplication} onChange={handleChange} />)
+      <>
+    <Table columns={columns} dataSource={JobApplication} onChange={handleChange} />
+
+    
+     
+      <Modal
+        
+        centered
+        visible={visible}
+        onOk={() => setVisible(false)}
+        onCancel={() => setVisible(false)}
+        width={1000}
+      >
+        <ViewPost></ViewPost>
+      </Modal>
+  </>
     );
 };
+
+
+     
+  
+  
+
 
 
 export default MyJobApplication;

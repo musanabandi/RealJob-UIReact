@@ -317,5 +317,5 @@ const ProfileForm = () => {
   );
 };
 
-//ReactDOM.render(<RegistrationForm />, document.getElementById('container'));
+
 export default ProfileForm;
