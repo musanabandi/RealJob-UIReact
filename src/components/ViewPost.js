@@ -34,7 +34,7 @@ A computer programmer, sometimes called a software developer.
 
      <br></br>
 <h3 style={{textAlign:'left'}}>posted on: <i>3 / may / 2021</i></h3>
- <Button type="primary" ><a href='createapplication'>Apply</a></Button>
+ 
  </div>
 </Card>
 

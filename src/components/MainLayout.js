@@ -66,7 +66,7 @@ const MainLayout = ({ children }) => {
 
             {store.get("user") ? (
               <>
-              <Menu.Item key="2"> <Link to="/createapplication">Dashboard</Link></Menu.Item>
+              <Menu.Item key="2"> <Link to="/progress">Dashboard</Link></Menu.Item>
                 <Menu.Item key="5">
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
@@ -89,7 +89,7 @@ const MainLayout = ({ children }) => {
       <Content style={{ padding: "0 0px", width: "100%" }}>
         <Layout
           className="site-layout-background"
-          style={{ padding: "24px 0" }}
+          // style={{ padding: "0px 0" }}
         >
           {sideNavVisible ? (
             <Sider collapsible collapsed ={collapsed} onCollapse={onCollapse}  className="site-layout-background" widows={400} style={{ backgroundColor:"dark", minHeight:'100vh', }} >
@@ -157,7 +157,7 @@ const MainLayout = ({ children }) => {
           ):null}
 
 
-          <Content style={{ padding: "0 24px", minHeight: "100vh" }}>
+          <Content style={{ padding: " 0 0px", minHeight: "100vh" }}>
             {children}
           </Content>
         </Layout>

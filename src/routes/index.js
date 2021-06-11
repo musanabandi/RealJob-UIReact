@@ -26,6 +26,7 @@ import ProgressView from '../views/ProgressView';
 
 
 
+
 const Index = () => {
 
     return (
@@ -55,9 +56,18 @@ const Index = () => {
     <Route component={Health} exact path={["/healthPage"]} />
     <Route component={Business} exact path={["/businessPage"]} />
 
+
+              <Route component={AboutUs} exact path={["/aboutus"]} />
+              <Route component={Software} exact path={["/softawarePage"]} />
+
+              <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+             
+
+
    <Route component={AboutUs} exact path={["/aboutus"]} />
   <Route component={Software} exact path={["/softawarePage"]} />
  <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+
 
 <Route component={TrainingRecord} exact path={['/training']} />
 <Route component={Reference} exact path={['/reference']} />
