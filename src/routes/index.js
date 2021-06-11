@@ -18,8 +18,8 @@ import Health from '../views/HealthViews';
 import Business from '../views/BusinessViews';
 import Information from '../views/InformationViews';
 import Transport from '../views/TransportViews';
-
 import  EdicationRecordProfile from '../views/Education';
+
 
 
 
@@ -58,6 +58,7 @@ const Index = () => {
               <Route component={Software} exact path={["/softawarePage"]} />
 
               <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+             
 
 
 
