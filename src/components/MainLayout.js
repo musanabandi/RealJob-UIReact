@@ -66,6 +66,8 @@ const MainLayout = ({ children }) => {
 
             {store.get("user") ? (
               <>
+              <Menu.Item key="2"> <Link to="/progress
+              ">Dashboard</Link></Menu.Item>
               <Menu.Item key="2"> <Link to="/progress">Dashboard</Link></Menu.Item>
                 <Menu.Item key="5">
                   <Link to="/signin" onClick={HandleSignOut}>
