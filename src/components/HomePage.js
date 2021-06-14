@@ -10,13 +10,13 @@ const HomePage=()=>{
 <div className="home-page">
 
     <div >
-    <h1 className=" homeeee">You Can Build Your Carrier Here!!!!</h1>
+    <h1 className=" homeeee">You Can Build Your Career Here!!!!</h1>
     
     <div className="home-h2">
     Find A Great Job Here. Build Your Business Here</div> 
    
    <div className="home-h2">
-   Take your Carrier to next Level..
+   Take your Career to next Level..
    </div>
     &nbsp;
 
