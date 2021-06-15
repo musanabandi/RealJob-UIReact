@@ -1,12 +1,12 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
-import HomeComponent from '../components/HomeComponent';
+import FirstHomes from '../components/FirstPage';
 
 
 
 
 
-const Homecard= () => {
+const HomePageOne= () => {
 
     return (
 
@@ -14,7 +14,7 @@ const Homecard= () => {
         <MainLayout>
            
         
-           <HomeComponent></HomeComponent>
+           <FirstHomes></FirstHomes>
            
            
                 
@@ -23,7 +23,7 @@ const Homecard= () => {
 
 }
 
-export default Homecard;
+export default HomePageOne;
 
 
 

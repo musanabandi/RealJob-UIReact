@@ -25,7 +25,8 @@ import ProfileView from '../views/ProfileViews';
 
 import TrainingRecord from '../views/Training';
 import Reference from '../views/Reference';
-import ProgressView from '../views/ProgressView';
+import ProgressView from '../views/dashBoard';
+import HomePageOne from '../views/ViewFirstPage'
 
 
 
@@ -82,7 +83,9 @@ const Index = () => {
 
 <Route component={TrainingRecord} exact path={['/training']} />
 <Route component={Reference} exact path={['/reference']} />
-<Route component={ProgressView} exact path={['/progress']} />
+<Route component={ProgressView} exact path={['/dashbord']} />
+<Route component={HomePageOne } exact path={['/homepage']} />
+
 
         </Switch>
 
