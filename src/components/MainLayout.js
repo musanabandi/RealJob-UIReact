@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
 import "./index.css";
-import { Card, Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
 import store, { set } from "store";
-import rjo1 from "../assets/rjo1.jpg";
+import logos from "../assets/logos.jpg";
+import tigo from "../assets/tigo.jpg";
+import { Layout, Menu, Breadcrumb, Form, Input, Cascader, Select, Row, Col, Checkbox, Button,  DatePicker,
+    AutoComplete, Card } from 'antd';
+
+
 import {
   UserOutlined,
   MenuOutlined,
@@ -15,10 +19,10 @@ import {
   FolderViewOutlined,
   FundViewOutlined,
   AppstoreAddOutlined
-} from "@ant-design/icons";
+} from '@ant-design/icons';
 
-const { SubMenu } = Menu;
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer, Sider  } = Layout;
+const { Option } = Select;
 
 const handlerGetUrl = () => {
   console.log("<><<>><><><><><>; ", window.location.pathname);
@@ -27,52 +31,44 @@ const handlerGetUrl = () => {
 const HandleSignOut = () => {
   store.clearAll();
 };
-
 const MainLayout = ({ children }) => {
-
-  const [collapsed, setCollapsed] = useState(false)
-  const onCollapse = (collapsed)=>{
-    setCollapsed(collapsed)
-  }
 
   const [sideNavVisible, setSideNavVisible] = useState(false);
   const [urlPathname, setUrlPathname] = useState(window.location.pathname);
 
   useEffect(() => {
-    if (urlPathname === "/home" || urlPathname === "/") setSideNavVisible(true);
+    if (urlPathname === "/dashbord") setSideNavVisible(true);
   }, [urlPathname]);
 
-  return (
-    <Layout>
-      <Header className="header">
-        <h1 style={{ color: "white", float: "left" }}>
+
+return(
+  <Layout className="layout">
+    <Header style={{position:'fixed', width:'100%', height:"80px" }}>
+    <h1 style={{ color: "white", float: "left" }}>
           {" "}
-          <img src={rjo1} className="rjo" />
+          <img src={logos} className="rjo" />
           Real Jobs Opportunity
         </h1>
-
-        {/* <div className="logo" /> */}
-
-        <div className="side-bar">
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-            <Menu.Item key="1">
+     
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{float:'right '}}>
+     
+       <Menu.Item key="1" >
               {" "}
-              <Link to="/home" onClick={handlerGetUrl}>
+              <Link to="/homepage" onClick={handlerGetUrl}>
                 {" "}
                 Home
               </Link>
             </Menu.Item>
             <Menu.Item key="3"> <Link to="/aboutus">About Us</Link></Menu.Item>
+            {/* <Menu.Item key="4" ><Link to="/home">All Jobs</Link></Menu.Item> */}
 
             {store.get("user") ? (
               <>
-              <Menu.Item key="2"> <Link to="/progress
-              ">Dashboard</Link></Menu.Item>
-              <Menu.Item key="2"> <Link to="/progress">Dashboard</Link></Menu.Item>
-                <Menu.Item key="5">
+              <Menu.Item key="5"> <Link to="/dashbord">Dashboard</Link></Menu.Item>
+                <Menu.Item key="6">
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
-                  </Link>
+                   </Link>
                 </Menu.Item>
               </>
             ) : (
@@ -86,46 +82,42 @@ const MainLayout = ({ children }) => {
               </>
             )}
           </Menu>
-        </div>
-      </Header>
-      <Content style={{ padding: "0 0px", width: "100%" }}>
-        <Layout
-          className="site-layout-background"
+    </Header>
 
-          style={{ padding: "0px 0px 0px 0px" }}
 
-        >
-          {sideNavVisible ? (
-            <Sider collapsible collapsed ={collapsed} onCollapse={onCollapse}  className="site-layout-background" widows={400} style={{ backgroundColor:"dark", minHeight:'100vh', }} >
-              <Menu theme="white"
-                mode="inline"
-                defaultSelectedKeys={["0"]}
-                defaultOpenKeys={["sub1"]}
-                style={{ height: "100" }}
-              >
-                <SubMenu
-                  key="sub1"
-                  icon={<UserOutlined />}
-                  title="Jobs Categories"
-                >
-                  <Menu.Item key="0"><Link to="/home">All Jobs</Link></Menu.Item>
-                  <Menu.Item key="1"><Link to="/softawarePage">Software Enginer</Link></Menu.Item>
-                  <Menu.Item key="2"><Link to="/agriculturePage">Agriculture, Food, Natural Resource</Link>
-                    
-                  </Menu.Item>
-                  <Menu.Item key="3"><Link to="/manpowerPage">Man-power</Link></Menu.Item>
-                  <Menu.Item key="4"><Link to="/businessPage">Business Management</Link></Menu.Item>
-                  <Menu.Item key="5"><Link to="/healthPage">Health Science</Link></Menu.Item>
-                  <Menu.Item key="6"><Link to="/transportPage">Transport and Logistics</Link></Menu.Item>
-                  <Menu.Item key="7"><Link to="/informationPage">Information Technology</Link></Menu.Item>
-                  <Menu.Item key="8"><Link to="/hotelPage">Hotel and Restaurants</Link></Menu.Item>
-                </SubMenu>
-              </Menu>
-            </Sider>
-          ) : store.get("user")? (
-            <>
+    <Content style={{minheight:'100vh', marginTop:'70px' }}>
+    
+      <Breadcrumb style={{ margin: '20px 0' }}>
 
-                    <Sider>
+        <Breadcrumb.Item> 
+        <Form.Item style={{width:'400px'}}>
+        <Select placeholder="All Categories" style={{color:'black',height:'30px'}}>
+          <Option >Accounting</Option>
+          <Option >Computer Science</Option>
+          <Option >Management</Option>
+          <Option >Marketing and Sales</Option>
+          <Option >Medecine</Option>
+          <Option >Human Resource</Option>
+          <Option >Food Science</Option>
+          <Option >information system</Option>
+          <Option >Research</Option>
+          <Option >Public Health</Option>
+          <Option >Telecommunication</Option>
+          <Option >Project Management</Option>
+          <Option >Mining</Option>
+          <Option >Information Technology</Option>
+          <Option >Social Science</Option>
+        </Select>
+
+             </Form.Item></Breadcrumb.Item>
+
+       
+      </Breadcrumb>
+      
+
+      {sideNavVisible ? (
+   
+      <Sider style={{minHeight:'100vh', position:'fixed'}}>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<MenuOutlined />}>
               Dashboard
@@ -134,16 +126,11 @@ const MainLayout = ({ children }) => {
               
             </Menu.Item>
 
-            <Menu.Item key="3" icon={<UserOutlined />}><Link to='/viewprofile'>  View Profile</Link>
-              
-              </Menu.Item>
-
+          
             <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
              
             </Menu.Item>
-            {/* <Menu.Item key="9" icon={<FormOutlined />}><Link to='/createapplication'> Create Application</Link>
-              Create Application
-            </Menu.Item> */}
+           
 
             <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Applications</Link>
              
@@ -161,24 +148,16 @@ const MainLayout = ({ children }) => {
             </Menu.Item>
           </Menu>
         </Sider>
-            </>
+         ):null} 
+        <div className="site-layout-content">{children}</div>
+      
+      
+    </Content>
 
-          ):null}
+    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+  </Layout>
+  
+);
+    }
 
-
-
-          <Content style={{ padding: "0 0px", minHeight: "100vh" }}>
-
-            {children}
-          </Content>
-        </Layout>
-      </Content>
-
-      <Footer style={{ textAlign: "center" }}>
-
-         Design by Clarisse Damars Media and Ange
-      </Footer>
-    </Layout>
-  );
-};
-export default MainLayout;
+    export default MainLayout;
