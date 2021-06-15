@@ -1,0 +1,20 @@
+.homes-container{
+    width:100%;
+    background: url(../assets/home.jpg);
+    background-size: cover;
+    /* background-color: rgb(139, 87, 87); */
+    height: 800px;
+    opacity: 0.5;
+    margin: 0px;
+    position: relative;
+
+}
+.home-title{
+
+    font-size: 40px;
+    font-weight: 600;
+    color: skyblue;
+    text-align: center;
+    padding-top:400px;
+    /* position: absolute; */
+}
