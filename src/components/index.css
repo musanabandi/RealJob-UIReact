@@ -22,6 +22,9 @@
  border-radius: 50%;
   
 }
+.nav{
+  font-size: 20px;
+}
 
 
 .title{
@@ -174,6 +177,13 @@
   padding: 3% 10% 2% 5%;
 
 
+  }
+
+  .job-title{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: -500px;
+    color:black;
   }
 
 

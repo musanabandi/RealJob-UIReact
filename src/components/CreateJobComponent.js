@@ -109,5 +109,5 @@ const JobCreation = () => {
   );
 };
 
-//ReactDOM.render(<FormSizeDemo />, document.getElementById('container'));
+
 export  default JobCreation;

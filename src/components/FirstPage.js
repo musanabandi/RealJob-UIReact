@@ -4,6 +4,7 @@ import { Card, Layout, Menu, Button, Row, Col } from "antd";
 import { Link } from "react-router-dom";
 import './home.css';
 import mtn from "../assets/mtn.png";
+import job2 from "../assets/job2.jpg";
 import {
     LikeOutlined,
     ShareAltOutlined,
@@ -23,18 +24,28 @@ const FirstHomes=()=>{
 
 <div className="homes-container">
 <div className='home-title'>
-<marquee width="80%" direction="left" height="100px">
-<h1 style={{color:'Black'}}> Hundreds Of Users Searching For Their Dream Job.</h1>
-</marquee>
+<h1 style={{color:'white'}}> Hundreds Of Users Searching <br/>For Their Dream Job.</h1>
+</div>
+<div>
+<img src={job2} className="home-card" />
+</div>
+
+<Button type="primary" htmlType="submit" style={{marginLeft:'670px',width:'120px',height:'40px', marginTop:'90px'}} ><Link to='/signin'>Find Job</Link>
+                  
+                </Button>
 
 </div>
-</div>
+<Card>
+<div><h1 style={{color:'black', marginLeft:'700px',fontSize:'30px', fontWeight:'bolder'}}>Latest Jobs</h1></div>
+</Card>
 
 <Card style={{minHeight:'100vh'}}>
 
 
 {allJobs.map((job) => {
+   
         return (
+          
 <Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px' }}>
 
 

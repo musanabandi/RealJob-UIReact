@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
 import './login.css';
-import { Form, Input, Button, Checkbox, Card } from 'antd';
+import { Form, Input, Button, Checkbox, Card, Modal } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import RealJobApi from '../services/apiRealJob';
 import { useHistory } from 'react-router-dom';
 import store from 'store';
+
 // import images from "../assets/login.jpg";
 
 const SignInComponent = () => {
@@ -32,7 +33,7 @@ const SignInComponent = () => {
   };
 
  
-
+ 
 
   return (
     <Card className='login-backgraund' style={{minHeight:'100vh'}}>
@@ -97,7 +98,13 @@ const SignInComponent = () => {
         New User? <a href="signup">Click Here To Create Account!</a>
         </div>
         </Form.Item>
+        
       </Form>
+
+
+    
+    
+
     </Card>
     </Card>
   );
