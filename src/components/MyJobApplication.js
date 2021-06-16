@@ -90,9 +90,6 @@ const columns = [
         View
         </Button>
 
-        <a style={{color: 'red'}} onClick={handleCancel}   >Cancel</a>
-
-        <a>View</a>
         <a style={{color: 'red'}} onClick={showConfirm} >Cancel</a>
 
       </Space>
