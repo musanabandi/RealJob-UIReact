@@ -13,7 +13,7 @@ const About=()=>{
 
 
 
-<h1>Our mission</h1> <h3>is to create economic opportunities so people have better lives 
+<h1>Our mission</h1> <hr></hr><h3>is to create economic opportunities so people have better lives 
 has taken us so much further. As a result, 
 we want to become the world’s work marketplace where
  every day businesses of all sizes and 
@@ -32,8 +32,11 @@ independent talent from around the globe meet here to accomplish incredible thin
 
 <h1>Start your journey</h1>
 &nbsp; &nbsp;
+
+
 <button className="about-button"> <Link to="/home">Find Job</Link></button>
 </Card>
+
     );
 };
 
