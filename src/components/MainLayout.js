@@ -5,7 +5,7 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import store, { set } from "store";
 import logos from "../assets/logos.jpg";
-import tigo from "../assets/tigo.jpg";
+import jobsearch  from "../assets/jobsearch.jpg";
 import { Layout, Menu, Breadcrumb, Form, Input, Cascader, Select, Row, Col, Checkbox, Button,  DatePicker,
     AutoComplete, Card } from 'antd';
 
@@ -43,8 +43,8 @@ const MainLayout = ({ children }) => {
 
 return(
   <Layout className="layout">
-    <Header style={{position:'fixed', width:'100%', height:"80px" }}>
-    <h1 style={{ color: "white", float: "left" }}>
+    <Header style={{position:'fixed', width:'100%', height:"80px", zIndex:'10' }}>
+    <h1 style={{ color: "white", float: "left",fontSize:'20px' }}>
           {" "}
           <img src={logos} className="rjo" />
           Real Jobs Opportunity
@@ -52,20 +52,20 @@ return(
      
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{float:'right '}}>
      
-       <Menu.Item key="1" >
+       <Menu.Item key="1"className='nav' >
               {" "}
               <Link to="/homepage" onClick={handlerGetUrl}>
                 {" "}
                 Home
               </Link>
             </Menu.Item>
-            <Menu.Item key="3"> <Link to="/aboutus">About Us</Link></Menu.Item>
-            {/* <Menu.Item key="4" ><Link to="/home">All Jobs</Link></Menu.Item> */}
+            <Menu.Item key="3"className='nav'> <Link to="/aboutus">About Us</Link></Menu.Item>
+            <Menu.Item key="4" className='nav' ><Link to="/home">All Jobs</Link></Menu.Item>
 
             {store.get("user") ? (
               <>
-              <Menu.Item key="5"> <Link to="/dashbord">Dashboard</Link></Menu.Item>
-                <Menu.Item key="6">
+              <Menu.Item key="5" className='nav'> <Link to="/dashbord">Dashboard</Link></Menu.Item>
+                <Menu.Item key="6"className='nav'>
                   <Link to="/signin" onClick={HandleSignOut}>
                     SignOut
                    </Link>
@@ -73,10 +73,10 @@ return(
               </>
             ) : (
               <>
-                <Menu.Item key="6">
+                <Menu.Item key="6" className='nav'>
                   <Link to="/signup">SignUp</Link>
                 </Menu.Item>
-                <Menu.Item key="7">
+                <Menu.Item key="7" className='nav'>
                   <Link to="/signin">SignIn</Link>
                 </Menu.Item>
               </>
@@ -87,10 +87,10 @@ return(
 
     <Content style={{minheight:'100vh', marginTop:'70px' }}>
     
-      <Breadcrumb style={{ margin: '20px 0' }}>
 
-        <Breadcrumb.Item> 
-        <Form.Item style={{width:'400px'}}>
+        <Card style={{height:'100px', width:'100%'}}>
+          <div style={{height:'100px' ,width:'500px'}}>
+        <Form.Item style={{width:'400px',marginTop:'15px',height:'15px'}}>
         <Select placeholder="All Categories" style={{color:'black',height:'30px'}}>
           <Option >Accounting</Option>
           <Option >Computer Science</Option>
@@ -109,15 +109,21 @@ return(
           <Option >Social Science</Option>
         </Select>
 
-             </Form.Item></Breadcrumb.Item>
+             </Form.Item>
+             </div>
+           <div>
+             <marquee><h1 className="job-title">
+               Real Job Opportunity For All Category</h1></marquee>
+             </div>
+              </Card>
 
        
-      </Breadcrumb>
+     
       
 
       {sideNavVisible ? (
    
-      <Sider style={{minHeight:'100vh', position:'fixed'}}>
+      <Sider style={{minHeight:'100vh', position:'fixed',width:'500px'}}>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1" icon={<MenuOutlined />}>
               Dashboard
