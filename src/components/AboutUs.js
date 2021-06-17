@@ -11,14 +11,21 @@ const About=()=>{
 <h1 className="about-title" >About Us</h1>
 <h4>Real Job Opportunity</h4>
 
+<h3>Real Job Opportunity start in 2021 by preparing a better way of working, 
+    help businesses find flexibility and connecting talent and opportunities.  </h3>
 
 
-<h1>Our mission</h1> <hr></hr><h3>is to create economic opportunities so people have better lives 
+<Card>
+<h1 font-size="bolder">Our mission</h1> <hr></hr><h3>
+    Our Mission is to create economic opportunities, so people have better lives.
+  
 has taken us so much further. As a result, 
 we want to become the world’s work marketplace where
  every day businesses of all sizes and 
 independent talent from around the globe meet here to accomplish incredible things.
 </h3>
+</Card>
+
 <h1>Our Vision</h1>
 <h4>is to reach in all corners where every body is able to search easily job on our website.</h4>
 
