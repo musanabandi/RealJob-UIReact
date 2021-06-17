@@ -25,7 +25,7 @@ const layout = () => {
 
 
 <Card>
-<div><h1 style={{color:'black', marginLeft:'500px',fontSize:'40px', fontWeight:'bolder'}}>All Jobs We Have</h1></div>
+<div><h1 style={{color:'black', marginLeft:'500px',fontSize:'35px', fontWeight:'bolder'}}>All Jobs We Have</h1></div>
 </Card>
 
 <Card style={{minHeight:'100vh'}}>
@@ -41,17 +41,17 @@ const layout = () => {
 <div class="card-container">
               {" "}
               <Link to="/viewpost"></Link>
-              <h1 style={{ marginLeft:'-100px'}}>
-                <b>
+              <h1 style={{ marginLeft:'-100px',fontSize:'35px'}}>
+                <b style={{fontSize:'25px'}}>
                   <i>{job.title}</i>{" "}
                 </b>
               </h1>
-              <h3 style={{ marginLeft:'-100px'}}>{job.type}</h3>
+              <h3 style={{ marginLeft:'-100px',fontSize:'18px',color:'green'}}>{job.type}</h3>
              
-              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px'}}>
+              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px',fontSize:'18px'}}>
                 Posted by: <b> {job.postedBy}</b>
               </h3>
-              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px'}}>
+              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px',fontSize:'18px'}}>
                 Posted On: {job.postedTime}
               </h3>
             
@@ -59,7 +59,7 @@ const layout = () => {
   <Row style={{ height: "100px", width: "100%" }}>
               <Col span={12} >
 
-              <img src={job.picture} style={{ height: "100px", width: "120px", marginTop:"-125px",marginLeft:'-200px' }}/>
+              <img src={job.picture} style={{ height: "100px", width: "120px", marginTop:"-230px",marginLeft:'-200px' }}/>
              
               </Col>
               <Col
@@ -68,7 +68,7 @@ const layout = () => {
                   height: "60px",
                   width: "100%",
                   float: "right",
-                  marginTop:"-20px"
+                  marginTop:"-65px"
                 }}
               >
                   <DislikeOutlined className="job-icon" />

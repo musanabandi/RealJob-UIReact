@@ -1,44 +1,40 @@
- import React from 'react';
-import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css';
+import React, { useState } from 'react';
 import './index.css';
-import './login.css';
-import { Form, Input, Button, Checkbox, Card, Modal } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import RealJobApi from '../services/apiRealJob';
-import { useHistory } from 'react-router-dom';
-import store from 'store';
+import { Form, Input, Button, Checkbox, Popconfirm, Row, Col, Modal,Card } from 'antd';
+import { UserOutlined, LockOutlined,HomeOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import { FormInstance } from 'antd/lib/form';
 
-// import images from "../assets/login.jpg";
 
-const SignInComponent = () => {
-
-  const history = useHistory();
-
-  const onFinish = async (values) => {
-    // console.log("Received values of form: ", values);
-
-    // const response = await RealJobApi.loginAuth(values);
-    const response = {status:201};
-    // console.log(response);
-    if (!response) { 
-      return
-    }
-    if (response.status === 201) {
-      
-      store.set('user',{token:'this is my token',role:'jobSeeker'})
-
-      return history.push('/home')
-    }
+const SignInModal = () => {
+  const onFinish = (values) => {
+    console.log('Success:', values);
   };
-
+  const onFinishFailed = (errorInfo) => {
+    console.log('Failed:', errorInfo);
+  };
  
- 
-
+  const [visible, setVisible] = useState(false);
   return (
-    <Card className='login-backgraund' style={{minHeight:'100vh'}}>
-      {/* <img src={images} /> */}
-    <Card className="card-login">
+    <div className="home-container" xs={{ span: 4, offset: 1 }} xl={{ span: 24}} xxl={{ span: 24}}>
+      <Row>
+        <Col span={6} offset={1} className="first_column0n-loginpage">
+          <Button type="primary" onClick={() => setVisible(true)}>
+            LOGIN
+          </Button>
+		  
+		  
+		  
+          <Modal
+            centered
+            visible={visible}
+            onOk={() => setVisible(false)}
+            onCancel={() => setVisible(false)}
+            width={700}
+          >
+            <h2 style={{ textAlign: "center" }}>LOGIN FORM</h2><br />
+
+           
   
       <Form
         name="normal_login"
@@ -50,7 +46,7 @@ const SignInComponent = () => {
         onFinish={onFinish}
 
       >
-       <h2 style={{color:'black'}}>SignIn</h2>
+      
         <Form.Item
           name="email"
           rules={[
@@ -91,9 +87,9 @@ const SignInComponent = () => {
 
 
         <Form.Item>
-          <Button type="primary" htmlType="submit" className="login-form-button">
-            Log In
-        </Button>
+          {/* <Button type="primary" htmlType="submit" className="login-form-button">
+            LOGIN
+        </Button> */}
         <div class='sign-content '>
         New User? <a href="signup">Click Here To Create Account!</a>
         </div>
@@ -101,8 +97,13 @@ const SignInComponent = () => {
         
       </Form>
 
-    </Card>
-    </Card>
+    
+          </Modal>
+		  
+        </Col>
+       
+      </Row>
+    </div>
   );
 };
-export default SignInComponent;
+export default SignInModal ;

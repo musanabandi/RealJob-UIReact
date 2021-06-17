@@ -1,5 +1,6 @@
 import Home from '../views/Home';
 import SignIn from '../views/SignIn';
+import ViewModal from '../views/SignModal';
 import SignUp from '../views/SignUp';
 import { Route, Switch } from 'react-router-dom';
 import ViewPost from '../views/ViewPost';
@@ -39,6 +40,8 @@ const Index = () => {
         <Switch>
             <Route component={Home} exact path={["/", "/home"]} />
             <Route component={SignIn} exact path={["/signin"]} />
+            <Route component={ViewModal} exact path={["/signmodal"]} />
+
               <Route component={SignUp} exact path={["/signup"]} />
 
               <Route component={ViewPost} exact path={["/viewpost"]} />
