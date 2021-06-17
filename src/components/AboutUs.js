@@ -12,9 +12,11 @@ const About=()=>{
 
 
 
+
 <div style={{marginLeft:'30px'}}>
 <h1 style={{fontSize:'25px',fontWeight:'bolder'}}>Our Mission</h1> 
 <h3 style={{fontSize:'20px'}}>Is to create economic opportunities so people have better lives 
+
 has taken us so much further. As a result, 
 we want to become the world’s work marketplace where<br/>
  every day businesses of all sizes and 
@@ -33,12 +35,18 @@ independent talent from around the globe meet here to accomplish incredible thin
 
 <h1 style={{fontSize:'25px',fontWeight:'bolder'}}>Start your journey</h1>
 &nbsp; &nbsp;
+
 <Button type="primary" htmlType="submit" className='about-button'>
 <Link to="/home">Find Job</Link>
                 </Button>
 
 </div>
+
+
+
+
 </Card>
+
     );
 };
 
