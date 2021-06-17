@@ -18,7 +18,16 @@ import {
   BankOutlined,
   FolderViewOutlined,
   FundViewOutlined,
-  AppstoreAddOutlined
+  AppstoreAddOutlined,
+    FacebookOutlined,
+    GithubOutlined,
+    PhoneOutlined,
+    LinkedinOutlined,
+    TwitterOutlined,
+    MailOutlined,
+    SlackOutlined
+    
+  
 } from '@ant-design/icons';
 
 const { Header, Content, Footer, Sider  } = Layout;
@@ -88,7 +97,7 @@ return(
     <Content style={{minheight:'100vh', marginTop:'70px' }}>
     
 
-        <Card style={{height:'100px', width:'100%'}}>
+        <Card style={{height:'100px', width:'1800px'}}>
           <div style={{height:'100px' ,width:'500px'}}>
         <Form.Item style={{width:'400px',marginTop:'15px',height:'15px'}}>
         <Select placeholder="All Categories" style={{color:'black',height:'30px'}}>
@@ -123,33 +132,33 @@ return(
 
       {sideNavVisible ? (
    
-      <Sider style={{minHeight:'100vh', position:'fixed',width:'500px'}}>
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1" icon={<MenuOutlined />}>
+      <Sider style={{minHeight:'100vh', position:'fixed'}}>
+          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" style={{minHeight:'100vh',width:'500px'}}>
+            <Menu.Item key="1" icon={<MenuOutlined />}style={{fontSize:'22px'}}>
               Dashboard
             </Menu.Item>
-            <Menu.Item key="2" icon={<UserOutlined />}><Link to='/profile'>  Profile</Link>
+            <Menu.Item key="2" icon={<UserOutlined />}style={{fontSize:'20px'}}><Link to='/profile'>  Profile</Link>
               
             </Menu.Item>
 
           
-            <Menu.Item key="9" icon={<FundViewOutlined />}><Link to='/home'> View Posted Job</Link>
+            <Menu.Item key="9" icon={<FundViewOutlined />}style={{fontSize:'20px'}}><Link to='/home'> View Posted Job</Link>
              
             </Menu.Item>
            
 
-            <Menu.Item key="10" icon={<AppstoreAddOutlined />}><Link to='/myjobapplication'> My Applications</Link>
+            <Menu.Item key="10" icon={<AppstoreAddOutlined />}style={{fontSize:'20px'}}><Link to='/myjobapplication'> My Applications</Link>
              
             </Menu.Item>
 
-            <Menu.Item key="10" icon={<FileSearchOutlined />}><Link to='/mypost'> View MyPosted Job</Link>
+            <Menu.Item key="10" icon={<FileSearchOutlined />}style={{fontSize:'20px'}}><Link to='/mypost'> View MyPosted Job</Link>
               
             </Menu.Item> 
 
-            <Menu.Item key="10" icon={<FolderViewOutlined />}><Link to='/applicants'>  Applicants List</Link>
+            <Menu.Item key="10" icon={<FolderViewOutlined />}style={{fontSize:'20px'}}><Link to='/applicants'>  Applicants List</Link>
               
             </Menu.Item>
-            <Menu.Item key="10" icon={<BankOutlined />}><Link to='/createjob'>  Create A Job</Link>
+            <Menu.Item key="10" icon={<BankOutlined />}style={{fontSize:'20px'}}><Link to='/createjob'>  Create A Job</Link>
               
             </Menu.Item>
           </Menu>
@@ -160,7 +169,61 @@ return(
       
     </Content>
 
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer className='footer-image' style={{height:'300px'}}>
+
+
+    <div className="row">
+
+<div className="col">
+    
+  <h1 style={{fontSize:'25px', color:'white'}}>
+    About Us
+    <hr style={{width:'70px', marginLeft:'0px'}} />
+  </h1><br/>
+  <p style={{fontSize:'18px', color:'white'}}>Real Job Opportunity</p>
+  
+</div>
+
+<div className ="col">
+<h1 style={{fontSize:'25px', color:'white'}}>
+    Social Link
+    <hr style={{width:'70px', marginLeft:'0px'}} />
+  </h1><br/>
+  <p style={{fontSize:'18px', color:'white'}}>
+  
+  <LinkedinOutlined className="socialIcon"/><p style={{marginTop:'-27px', color:'white',marginLeft:'25px'}} >Linkedin</p>
+  <TwitterOutlined className="socialIcon"/><p style={{marginTop:'-27px', color:'white',marginLeft:'25px'}}>Twitter</p>
+  <SlackOutlined className="socialIcon"/><p style={{marginTop:'-27px', color:'white',marginLeft:'25px'}}>Slack</p>
+  <FacebookOutlined className="socialIcon"/><p style={{marginTop:'-27px', color:'white',marginLeft:'25px'}}>Facebook</p> 
+  
+  </p>
+    
+  </div>
+
+
+  <div className ="col">
+
+  <h1 style={{fontSize:'25px', color:'white'}}>
+    Contact Us
+    <hr style={{width:'70px', marginLeft:'0px'}} />
+  </h1><br/>
+ 
+  <p style={{fontSize:'18px', color:'white'}}>
+  <PhoneOutlined className="socialIcon"/><p style={{marginTop:'-27px', color:'white',marginLeft:'25px'}}>(+250)783411559</p>
+  <MailOutlined className="socialIcon"/><p style={{marginTop:'-27px', color:'white',marginLeft:'25px'}}>shecancode@gmail.com</p> 
+    </p>
+  </div>
+
+  
+ 
+
+   </div> 
+     
+
+
+
+
+    </Footer>
   </Layout>
   
 );

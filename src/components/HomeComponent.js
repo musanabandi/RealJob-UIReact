@@ -20,40 +20,52 @@ const layout = () => {
   
   return (
 
-    <Card style={{ width: "100%" , minHeight:'100vh' }}>
-      {allJobs.map((job) => {
+    <Card style={{minHeight:"100vh"}} >
+
+
+
+<Card>
+<div><h1 style={{color:'black', marginLeft:'500px',fontSize:'40px', fontWeight:'bolder'}}>All Jobs We Have</h1></div>
+</Card>
+
+<Card style={{minHeight:'100vh'}}>
+
+
+{allJobs.map((job) => {
+   
         return (
-          <Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px' }}>
+          
+<Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px' }}>
 
 
 <div class="card-container">
               {" "}
               <Link to="/viewpost"></Link>
-              <h1>
+              <h1 style={{ marginLeft:'-100px'}}>
                 <b>
                   <i>{job.title}</i>{" "}
                 </b>
               </h1>
-              <h3>{job.type}</h3>
+              <h3 style={{ marginLeft:'-100px'}}>{job.type}</h3>
              
-              <h3 style={{ fontStyle: "Times New Roman" }}>
+              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px'}}>
                 Posted by: <b> {job.postedBy}</b>
               </h3>
-              <h3 style={{ fontStyle: "Times New Roman" }}>
+              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px'}}>
                 Posted On: {job.postedTime}
               </h3>
             
 
-  <Row style={{ height: "80px", width: "100%" }}>
+  <Row style={{ height: "100px", width: "100%" }}>
               <Col span={12} >
 
-              <img src={job.picture} style={{ height: "80px", width: "100px", marginTop:"-125px" }}/>
+              <img src={job.picture} style={{ height: "100px", width: "120px", marginTop:"-125px",marginLeft:'-200px' }}/>
              
               </Col>
               <Col
                 span={12}
                 style={{
-                  height: "40px",
+                  height: "60px",
                   width: "100%",
                   float: "right",
                   marginTop:"-20px"
@@ -64,8 +76,8 @@ const layout = () => {
                 <ShareAltOutlined className="job-icon" />
 
                 <Link to="/viewpost">
-                <Button type="primary" htmlType="submit" >
-                  Read more ...
+                <Button type="primary" htmlType="submit" className='button-wrapper'>
+                  <p style={{fontSize:'18px'}}>Read more ...</p>
                 </Button>
                 </Link>
               </Col>
@@ -73,9 +85,11 @@ const layout = () => {
             </div>
 
             </Card.Grid>
-        );
-      })}
-    </Card>
+            );
+        })}
+</Card>
+
+</Card>
   );
 };
 

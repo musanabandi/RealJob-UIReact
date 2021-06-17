@@ -1,8 +1,9 @@
 .login-backgraund{
     height:100% ;
     width: 100%;
-   background: url(../assets/login.jpg);  
-    /* background-color: #1e8fff5b; */
+   background: url(../assets/slide.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
   }
 
   .card-login {

@@ -4,7 +4,7 @@ import './index.css';
 import { Progress, Card } from 'antd';
 const ProgressComponent = () => {
 return(
-  <Card>
+  <Card style={{minHeight:'100vh',width:'100%'}}>
     <Progress percent={30} />
     <Progress percent={50} status="active" />
     <Progress percent={70} status="exception" />

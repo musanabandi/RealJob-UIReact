@@ -1,7 +1,7 @@
 .site-layout-content {
   min-height: 100vh;
-  padding: 0px;
-  background: rgb(206, 193, 193);
+  width: 100%;
+  background:white;
 }
 .logo {
   float: left; 
@@ -185,6 +185,26 @@
     margin-top: -500px;
     color:black;
   }
+
+  .row{
+    display: grid;
+    column-gap: 10%;
+    grid-template-columns: auto auto auto;
+}
+.col {
+    margin: 0% 0% 0% 4%;
+    width: 96%;
+    height: 100%;
+
+}
+
+.footer-image{
+  height:50% ;
+  width: 100%;
+ background: url(../assets/b50.png);  
+background-size: cover;
+background-repeat: no-repeat;
+}
 
 
   

@@ -10,7 +10,7 @@ const ProgressComponent = () => {
 
 
 return(
-  <Card style={{marginLeft:'200px', minHeight:'100vh', width:'100%', marginLeft:'270px'}} ><div> <h1 className="h1">This is Your Statistics As JobSeeker</h1>
+  <Card style={{ minHeight:'100vh', width:'100%', marginLeft:'270px'}} ><div> <h1 className="h1" >This is Your Statistics As JobSeeker</h1>
       Your All Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Progress type="circle" percent={100} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     Cancelled Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Progress type="circle" percent={70} status="exception" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Succesfully Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Progress type="circle" percent={75} />

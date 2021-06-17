@@ -30,13 +30,13 @@ const FirstHomes=()=>{
 <img src={job2} className="home-card" />
 </div>
 
-<Button type="primary" htmlType="submit" style={{marginLeft:'670px',width:'120px',height:'40px', marginTop:'90px'}} ><Link to='/signin'>Find Job</Link>
+<Button type="primary" htmlType="submit" style={{marginLeft:'720px',width:'120px',height:'40px', marginTop:'90px'}} ><Link to='/signin'><p style={{fontSize:'20px'}}>Find Job</p></Link>
                   
                 </Button>
 
 </div>
 <Card>
-<div><h1 style={{color:'black', marginLeft:'700px',fontSize:'30px', fontWeight:'bolder'}}>Latest Jobs</h1></div>
+<div><h1 style={{color:'black', marginLeft:'600px',fontSize:'50px', fontWeight:'bolder'}}>Latest Jobs</h1></div>
 </Card>
 
 <Card style={{minHeight:'100vh'}}>
@@ -52,31 +52,31 @@ const FirstHomes=()=>{
 <div class="card-container">
               {" "}
               <Link to="/viewpost"></Link>
-              <h1>
+              <h1 style={{ marginLeft:'-100px'}}>
                 <b>
                   <i>{job.title}</i>{" "}
                 </b>
               </h1>
-              <h3>{job.type}</h3>
+              <h3 style={{ marginLeft:'-100px'}}>{job.type}</h3>
              
-              <h3 style={{ fontStyle: "Times New Roman" }}>
+              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px'}}>
                 Posted by: <b> {job.postedBy}</b>
               </h3>
-              <h3 style={{ fontStyle: "Times New Roman" }}>
+              <h3 style={{ fontStyle: "Times New Roman",marginLeft:'-100px'}}>
                 Posted On: {job.postedTime}
               </h3>
             
 
-  <Row style={{ height: "80px", width: "100%" }}>
+  <Row style={{ height: "100px", width: "100%" }}>
               <Col span={12} >
 
-              <img src={job.picture} style={{ height: "80px", width: "100px", marginTop:"-125px" }}/>
+              <img src={job.picture} style={{ height: "100px", width: "120px", marginTop:"-125px",marginLeft:'-200px' }}/>
              
               </Col>
               <Col
                 span={12}
                 style={{
-                  height: "40px",
+                  height: "60px",
                   width: "100%",
                   float: "right",
                   marginTop:"-20px"
@@ -87,8 +87,8 @@ const FirstHomes=()=>{
                 <ShareAltOutlined className="job-icon" />
 
                 <Link to="/viewpost">
-                <Button type="primary" htmlType="submit" >
-                  Read more ...
+                <Button type="primary" htmlType="submit" className='button-wrapper'>
+                  <p style={{fontSize:'18px'}}>Read more ...</p>
                 </Button>
                 </Link>
               </Col>
