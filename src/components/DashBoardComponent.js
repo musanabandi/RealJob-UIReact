@@ -10,21 +10,20 @@ const ProgressComponent = () => {
 
 
 return(
-  <Card style={{ minHeight:'100vh', width:'100%', marginLeft:'270px'}} ><div> <h1 className="h1" >This is Your Statistics As JobSeeker</h1>
-      Your All Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Progress type="circle" percent={100} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Cancelled Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Progress type="circle" percent={70} status="exception" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Succesfully Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Progress type="circle" percent={75} />
+  <Card style={{ minHeight:'100vh', width:'100%', marginLeft:'280px'}} >
+    
+    <div style={{marginTop:'120px', width:'100px', height:'100%'}}>
+    <h1 style={{fontSize:'25px', width:'500px'}} >Here We  Statistics </h1>
 
-</div>
-<div>
-<h1>This is Your Statistics As JobProvider</h1>
-      
-<Progress percent={30} size="small" />
-    all applicants on Software Developers jobs<Progress percent={50} size="small" status="active" />
-    Current Active Jobs<Progress percent={70} size="small" status="exception" />
-    All posted Jobs<Progress percent={100} size="small" />
+      Your All Applications
+      <Progress type="circle" percent={100} style={{marginLeft:'50px'}}/> 
+    Cancelled Applications
+    <Progress type="circle" percent={70} status="exception"  style={{marginLeft:'50px'}} />
+   Succesfully Applications
+  <Progress type="circle" percent={75} style={{marginLeft:'50px'}} />
 
-</div>
+  </div>
+ 
 </Card>
 
   );
