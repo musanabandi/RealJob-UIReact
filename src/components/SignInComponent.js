@@ -1,12 +1,15 @@
-import React from 'react';
+ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
-import { Form, Input, Button, Checkbox, Card } from 'antd';
+import './login.css';
+import { Form, Input, Button, Checkbox, Card, Modal } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import RealJobApi from '../services/apiRealJob';
 import { useHistory } from 'react-router-dom';
 import store from 'store';
+
+// import images from "../assets/login.jpg";
 
 const SignInComponent = () => {
 
@@ -18,23 +21,25 @@ const SignInComponent = () => {
     // const response = await RealJobApi.loginAuth(values);
     const response = {status:201};
     // console.log(response);
-    if (!response) {
+    if (!response) { 
       return
     }
     if (response.status === 201) {
       
       store.set('user',{token:'this is my token',role:'jobSeeker'})
 
-      return history.push('/dashboard')
+      return history.push('/home')
     }
   };
 
  
-
+ 
 
   return (
+    <Card className='login-backgraund' style={{minHeight:'100vh'}}>
+      {/* <img src={images} /> */}
     <Card className="card-login">
-
+  
       <Form
         name="normal_login"
         className="login-form"
@@ -45,7 +50,7 @@ const SignInComponent = () => {
         onFinish={onFinish}
 
       >
-       <h2>SignIn</h2>
+       <h2 style={{color:'black'}}>SignIn</h2>
         <Form.Item
           name="email"
           rules={[
@@ -55,7 +60,7 @@ const SignInComponent = () => {
             },
           ]}
         >
-          <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email" />
+          <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email Or Phone" />
         </Form.Item>
 
         <Form.Item
@@ -93,7 +98,10 @@ const SignInComponent = () => {
         New User? <a href="signup">Click Here To Create Account!</a>
         </div>
         </Form.Item>
+        
       </Form>
+
+    </Card>
     </Card>
   );
 };

@@ -6,7 +6,8 @@
         "postedTime":"20 march 2020 20:30 Pm",
         "category":"it",
         "type":"Part-Time",
-        "postedBy":" Damars"
+        "postedBy":" Damars",
+        "picture":"https://images.pexels.com/photos/1337384/pexels-photo-1337384.jpeg?cs=srgb&dl=pexels-magda-ehlers-1337384.jpg&fm=jpg"
 
     },
     {
@@ -15,7 +16,8 @@
         "postedTime":"20 march 2020 20:30 Pm",
         "category":"it",
         "type":"Full-Time",
-        "postedBy":" HviewTech Ltd"
+        "postedBy":" HviewTech Ltd",
+        "picture":"https://images.pexels.com/photos/2180780/pexels-photo-2180780.jpeg?cs=srgb&dl=pexels-brett-sayles-2180780.jpg&fm=jpg"
 
     },
     {
@@ -24,7 +26,8 @@
         "postedTime":"20 march 2020 20:30 Pm",
         "category":"it",
         "type":"Part-Time",
-        "postedBy":" Crallise"
+        "postedBy":" Crallise",
+        "picture":"https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 
     }
     ,
@@ -34,7 +37,8 @@
         "postedTime":"20 march 2020 20:30 Pm",
         "category":"it",
         "type":"Part-Time",
-        "postedBy":" Crallise"
+        "postedBy":" Crallise",
+        "picture":"https://images.pexels.com/photos/1111371/pexels-photo-1111371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 
     }
     ,
@@ -44,7 +48,8 @@
         "postedTime":"20 march 2020 20:30 Pm",
         "category":"it",
         "type":"Part-Time",
-        "postedBy":" Craly"
+        "postedBy":" Craly",
+        "picture":"https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 
     }
     ,
@@ -54,7 +59,8 @@
         "postedTime":"2 march 2020 10:30 Pm",
         "category":"it",
         "type":"full-Time",
-        "postedBy":" Media"
+        "postedBy":" Media",
+        "picture":"https://images.pexels.com/photos/1796283/pexels-photo-1796283.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 
     }
 ]

@@ -1,179 +1,210 @@
+.site-layout-content {
+  min-height: 100vh;
+  width: 100%;
+  background:white;
+}
 .logo {
-    float: left;
-    width: 120px;
-    height: 31px;
-    margin: 16px 24px 16px 0;
-    background: rgba(255, 255, 255, 0.3);
-    
-    
-  }
+  float: left; 
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+.rjo{
+  height: 60px;
+  width: 60px;
+  margin-top: 5px;
+  margin-right: 10px;
+ border-radius: 50%;
   
-  .ant-row-rtl .logo {
-    float: right;
-    margin: 16px 0 16px 24px;
-  }
-  
-  .site-layout-background {
-    background: #fff;
-    
-  }
-
-  .side-bar{
-    float: right;
-  }
-  .rjo{
-    height: 45px;
-    width: 45px;
-    /* margin: 10% 15% 5% 20%; */
-    margin-right: 10px;
-   border-radius: 50%;
-    
-  }
-  .title{
-    font-weight: bolder;
-    margin-left: 20em;
-  }
-  .card-container{
-    text-align: center;
-        width:25em;
-        height: 20em;
-        background-color:white;
-        box-shadow: 0px 0px 3px 3px #B0C4DE;
-        margin-left: -1em;
-        color:black; 
-        
-        
-       
-        
-  }
-  /* .card{
-    background-color: whitesmoke;
-    margin: 1px;
-    padding: 20px;
-    width: 100%;
-    height: 100%; 
-    
-  } */
-  
-  
- .button-home{
-   margin-top: -5em;
-   margin-left: 10em;
-   
-
- }
-  
-  .icons-home{
-    margin-right: 10em;
-    margin-top: 8em;
-
-  }
+}
+.nav{
+  font-size: 20px;
+}
 
 
-
-  .card-register {
-    font-weight: 600;
-    width: 50%;
-    margin: 0% 3% 3% 20%;
-    box-shadow: 0px 0px 3px 3px #B0C4DE;
-    padding: 3% 10% 2% 5%;
-    height: 90%;
-  }
-
-.card-register h2{
-
-  align-items: center;
-  margin-left: 120px;
-  color: dimgray;
+.title{
   font-weight: bolder;
+  margin-left: 20em;
+}
+.homeeee{
+  font-size:40px;
+  font-style: oblique;
+  color: rgb(35, 163, 214);
+  text-align: center;
+  margin-top: 2px; 
+}
+.home-h2{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  margin-top: 30px;
+  
+
+}
+.home-page{
+  
+  background-image: url("../assets/pp.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+}
+.card-container{
+  text-align: center;
+      width:100%;
+      background:"#e6f6ff";
+      padding: 10px;    
+}
+.card-container:hover{
+
+  cursor:pointer;
+  opacity:0.8;
+}
+.job-icon{
+  font-size:25px;
+  margin:10px;
+  float:right;
+}
+
+
+
+.about-title{
+  font-size: 40px;
+}
+.about-pic{
+   height: 105px;
+  width: 105px;
+ 
+  margin-right: 10px;
+ border-radius: 50%;
+}
+
+.button-home{
+ margin-top: -80px;
+ margin-left: 10em;  
+
+}
+
+.star-icon{
+ margin-top: 80px;
+ margin-left: -200px;
+ justify-content: space-between;
+}
+
+
+
+
+
+.sign-content {
+  margin-top: 30px;
+
+}
+
+
+.card-dashboard{
+
+  width: 90%;
+  height: 80%;
+  margin: 10% 3% 3% 5%;
+  box-shadow: 0px 0px 3px 3px #B0C4DE;
+}
+
+
+.createapp-button{
+  margin-left: 20%;
+  width: 20%;
+}
+
+.dashboard-content p{
+  font-size: 18px;
+  color: rgb(78, 76, 76);
+
+}
+.dragger-document{
+  margin-left: 200px;
+  width: 800px;
+ 
+}
+
+
+  .title-details{
+
+    justify-content: center;
+  text-align: center;
   font-size: 25px;
+  color: #1E90FF;
+  }
+  .profile-form{
 
-}
-
-.card-register p{
-
-  align-items: center;
-  font-weight: bolder;
-  color: dimgray;
-  font-size: 15px;
-
-}
-
- 
-
-  .card-login {
-    width: 45%;
+    width: 80%;
     height: 70%;
-    margin: 10% 3% 3% 22%;
-    box-shadow: 0px 0px 3px 3px#B0C4DE;
+    margin: 1% 3% 3% 15%;
+    box-shadow: 0px 0px 3px 3px #fff;
     padding: 3% 10% 2% 5%;
   }
-  
-  .login-form-forgot {
-    float: right;
-  }
- 
-  .login-form-button {
+  .education-profile{
+
     width: 100%;
+    height: 70%;
+    margin: 1% 3% 3% 15%;
+    box-shadow: 0px 0px 3px 3px #fff;
+    padding: 3% 10% 2% 5%;
+
   }
 
-  .card-login h2{
+  .create-application{
 
-    align-items: center;
-    margin-left: 120px;
-    font-weight: bolder;
-    color: #fff;
+  width: 70%;
+  height: 70%;
+  margin: 1% 3% 3% 15%;
+  box-shadow: 0px 0px 3px 3px#B0C4DE;
+  padding: 3% 10% 2% 5%;
+
+  }
+  .create-job{
+
+    width: 70%;
+  height: 70%;
+  margin: 1% 3% 3% 10%;
+  box-shadow: 0px 0px 3px 3px#B0C4DE;
+  padding: 3% 10% 2% 5%;
+
+
+  }
+
+  .job-title{
     font-size: 25px;
-
+    font-weight: bolder;
+    margin-top: -500px;
+    color:black;
   }
+
+  .row{
+    display: grid;
+    column-gap: 10%;
+    grid-template-columns: auto auto auto;
+}
+.col {
+    margin: 0% 0% 0% 4%;
+    width: 96%;
+    height: 100%;
+
+}
+
+.footer-image{
+  height:50% ;
+  width: 100%;
+ background: url(../assets/b50.png);  
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 
   
-
-  .sign-content {
-    margin-top: 30px;
-
-  }
-
-
-  .card-dashboard{
-
-    width: 90%;
-    height: 80%;
-    margin: 10% 3% 3% 5%;
-    box-shadow: 0px 0px 3px 3px #B0C4DE;
-  }
-  /* .content-comment{
-    height: 600px;
-  } */
-  
-  .button{
-    margin-left: 25%;
-    width: 20%;
-  }
-
-  .dashboard-content p{
-    font-size: 18px;
-    /* font-weight: bolder; */
-    color: rgb(78, 76, 76);
-
-  }
-  .dragger-document{
-    margin-left: 200px;
-    width: 800px;
-   
-  }
- 
-
-
-  /* .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .site-layout .site-layout-background {
-    background: #fff;
-  }
-    [data-theme="dark"] .site-layout .site-layout-background {
-      background: #141414;
-    } */

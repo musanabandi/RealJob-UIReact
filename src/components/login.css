@@ -1,0 +1,35 @@
+.login-backgraund{
+    height:100% ;
+    width: 100%;
+   background: url(../assets/slide.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+  .card-login {
+    width: 45%;
+    height: 70%;
+    margin: 5% 3% 3% 26%;
+    box-shadow: 0px 0px 3px 3px#B0C4DE;
+    padding: 3% 10% 2% 5%;
+    border-radius: 30px;
+    
+  }
+  
+  .login-form-forgot {
+    float: right;
+  }
+ 
+  .login-form-button {
+    width: 100%;
+  }
+
+  .card-login h2{
+
+    align-items: center;
+    margin-left: 120px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 25px;
+
+  }
