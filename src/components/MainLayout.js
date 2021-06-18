@@ -132,8 +132,8 @@ return(
 
       {sideNavVisible ? (
    
-      <Sider style={{minHeight:'100vh', position:'fixed'}}>
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" style={{minHeight:'100vh',width:'500px'}}>
+      <Sider style={{minHeight:'100vh', position:'fixed',width:'800px',zIndex:'1'}}>
+          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" style={{width:'200px'}}>
             <Menu.Item key="1" icon={<MenuOutlined />}style={{fontSize:'22px'}}>
               Dashboard
             </Menu.Item>

@@ -31,7 +31,7 @@ const FirstHomes=()=>{
 <img src={job2} className="home-card" />
 </div>
 
-<Button type="primary" htmlType="submit" style={{marginLeft:'720px',width:'120px',height:'40px', marginTop:'90px'}} ><Link to='/signin'><p style={{fontSize:'20px'}}>Find Job</p></Link>
+<Button type="primary" htmlType="submit" style={{marginLeft:'725px',width:'120px',height:'40px', marginTop:'90px'}} ><Link to='/signin'><p style={{fontSize:'20px'}}>Find Job</p></Link>
                   
                 </Button>
 

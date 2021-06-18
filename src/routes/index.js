@@ -42,52 +42,44 @@ const Index = () => {
             <Route component={SignIn} exact path={["/signin"]} />
             <Route component={ViewModal} exact path={["/signmodal"]} />
 
-              <Route component={SignUp} exact path={["/signup"]} />
+            <Route component={SignUp} exact path={["/signup"]} />
 
-              <Route component={ViewPost} exact path={["/viewpost"]} />
+            <Route component={ViewPost} exact path={["/viewpost"]} />
 
-              <Route component={JobSeeker} exact path={["/createapplication"]} />
+            <Route component={JobSeeker} exact path={["/createapplication"]} />
               
-              <Route component={AllApplicants} exact path={["/applicants"]} />
-              <Route component={JobOwner} exact path={["/mypost"]} />
+            <Route component={AllApplicants} exact path={["/applicants"]} />
+            <Route component={JobOwner} exact path={["/mypost"]} />
               
-              <Route component={JobProvider} exact path={["/createjob"]} />
-              <Route component={JobProfile} exact path={["/profile"]} />
-              <Route component={MyJobApplication} exact path={['/myjobapplication']} />
-              <Route component={ViewPopup} exact path={['/viewpopup']} />
+            <Route component={JobProvider} exact path={["/createjob"]} />
+            <Route component={JobProfile} exact path={["/profile"]} />
+            <Route component={MyJobApplication} exact path={['/myjobapplication']} />
+            <Route component={ViewPopup} exact path={['/viewpopup']} />
 
-
-<Route component={AboutUs} exact path={["/aboutus"]} />
-    <Route component={Software} exact path={["/softawarePage"]} />
-    <Route component={Agriculture} exact path={["/agriculturePage"]} />
+            <Route component={AboutUs} exact path={["/aboutus"]} />
+            <Route component={Software} exact path={["/softawarePage"]} />
+            <Route component={Agriculture} exact path={["/agriculturePage"]} />
     
-    <Route component={Transport} exact path={["/transportPage"]} />
-    <Route component={Hotel} exact path={["/hotelPage"]} />
-    <Route component={Information} exact path={["/informationPage"]} />
-    <Route component={Health} exact path={["/healthPage"]} />
-    <Route component={Business} exact path={["/businessPage"]} />
+            <Route component={Transport} exact path={["/transportPage"]} />
+            <Route component={Hotel} exact path={["/hotelPage"]} />
+            <Route component={Information} exact path={["/informationPage"]} />
+            <Route component={Health} exact path={["/healthPage"]} />
+            <Route component={Business} exact path={["/businessPage"]} />
 
+            <Route component={AboutUs} exact path={["/aboutus"]} />
+            <Route component={Software} exact path={["/softawarePage"]} />
 
-              <Route component={AboutUs} exact path={["/aboutus"]} />
-              <Route component={Software} exact path={["/softawarePage"]} />
+            <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+            <Route component={ ProfileView} exact path={['/profileview']} />
 
-              <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
+            <Route component={AboutUs} exact path={["/aboutus"]} />
+            <Route component={Software} exact path={["/softawarePage"]} />
+            <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
 
-              <Route component={ ProfileView} exact path={['/profileview']} />
-
-             
-
-
-   <Route component={AboutUs} exact path={["/aboutus"]} />
-  <Route component={Software} exact path={["/softawarePage"]} />
- <Route component={ EdicationRecordProfile} exact path={['/educationrecord']} />
-
-
-
-<Route component={TrainingRecord} exact path={['/training']} />
-<Route component={Reference} exact path={['/reference']} />
-<Route component={ProgressView} exact path={['/dashbord']} />
-<Route component={HomePageOne } exact path={['/homepage']} />
+            <Route component={TrainingRecord} exact path={['/training']} />
+            <Route component={Reference} exact path={['/reference']} />
+            <Route component={ProgressView} exact path={['/dashbord']} />
+            <Route component={HomePageOne } exact path={['/homepage']} />
 
 
         </Switch>
