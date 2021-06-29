@@ -23,7 +23,7 @@ const FirstHomes=()=>{
 
 <div className="homes-container">
 <div className='home-title'>
-<marquee width="80%" direction="left" height="100px">
+<marquee width="81%" direction="left" height="100px">
 <h1 style={{color:'Black'}}> Hundreds Of Users Searching For Their Dream Job.</h1>
 </marquee>
 
@@ -35,7 +35,7 @@ const FirstHomes=()=>{
 
 {allJobs.map((job) => {
         return (
-<Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px' }}>
+<Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px', backgroundColor: "darkgray" }}>
 
 
 <div class="card-container">

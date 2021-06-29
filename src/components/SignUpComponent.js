@@ -49,7 +49,7 @@ const SignUpComponent = () => {
     const [form] = Form.useForm();
     const onFinish = async (values) => {
         const res = await RealJobApi.signUp(values);
-        // 
+    
         if (!res) {
             return;
         }
