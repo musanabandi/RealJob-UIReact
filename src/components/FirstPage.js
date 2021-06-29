@@ -25,10 +25,12 @@ const FirstHomes=()=>{
 
 <div className="homes-container">
 <div className='home-title'>
-<h1 style={{color:'white'}}> Hundreds Of Users Searching <br/>For Their Dream Job.</h1>
-</div>
-<div>
-<img src={job2} className="home-card" />
+
+<marquee width="81%" direction="left" height="100px">
+<h1 style={{color:'Black'}}> Hundreds Of Users Searching For Their Dream Job.</h1>
+</marquee>
+
+
 </div>
 
 <Button type="primary" htmlType="submit" style={{marginLeft:'725px',width:'120px',height:'40px', marginTop:'90px'}} ><Link to='/signin'><p style={{fontSize:'20px'}}>Find Job</p></Link>
@@ -46,8 +48,9 @@ const FirstHomes=()=>{
 {allJobs.map((job) => {
    
         return (
-          
-<Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px' }}>
+
+<Card.Grid style={{ marginLeft: "140px ", marginTop: "60px ", width: "80%",padding: 5, border:'0.5px solid gray', border:'2px', height:'200px', backgroundColor: "darkgray" }}>
+
 
 
 <div class="card-container">

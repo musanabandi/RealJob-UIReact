@@ -59,7 +59,7 @@ return(
           Real Jobs Opportunity
         </h1>
      
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{float:'right '}}>
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{float:'right '}} position="fixed">
      
        <Menu.Item key="1"className='nav' >
               {" "}
