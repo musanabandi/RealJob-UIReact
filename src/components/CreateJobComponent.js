@@ -47,46 +47,23 @@ const JobCreation = () => {
           <Input className= "input"/>
         </Form.Item>
         <Form.Item label="JobCategory">
-          <Select>
-            <Select.Option value="demo">Dentist</Select.Option>
-          </Select>
+          <Input className= "input"/>
         </Form.Item>
 
         <Form.Item name={['user', 'comment']} label="JobDescription" >
                 <Input.TextArea className='content-comment'/>
                 </Form.Item>
+
+
         <Form.Item label="JobLocation">
-          <TreeSelect
-            treeData={[
-              {
-                title: 'Gasabo',
-                value: 'Gasabo',
-                children: [
-                  {
-                    title: 'Sector',
-                    value: 'Jabana',
-                  },
-                ],
-              },
-            ]}
-          />
+          <Input className= "input"/>
         </Form.Item>
+
         <Form.Item label="JobOwner">
-          <Cascader
-            options={[
-              {
-                value: 'MTN',
-                label: 'MTN',
-                children: [
-                  {
-                    value: 'MTN',
-                    label: 'MTN',
-                  },
-                ],
-              },
-            ]}
-          />
+          <Input className= "input"/>
         </Form.Item>
+
+
         <Form.Item label="PostedTime">
           <DatePicker />
         </Form.Item>
@@ -109,5 +86,5 @@ const JobCreation = () => {
   );
 };
 
-//ReactDOM.render(<FormSizeDemo />, document.getElementById('container'));
+
 export  default JobCreation;
